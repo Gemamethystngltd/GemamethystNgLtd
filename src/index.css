@@ -1,0 +1,57 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", serif;
+}
+
+/* nav bar conponnet  styling  */
+.nav_links .links {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  text-transform: capitalize;
+
+  color: white;
+}
+.nav_links .links:hover {
+  color: #6e3994;
+}
+
+/* herosection component styling */
+.hero_section {
+  background: url("./assets/bgImg1.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+/* solutions_sections conponents styling */
+.solutions_sections {
+  background: url("./assets/backgroundrepeat.png");
+  height: auto;
+}
+/* overlay section styling  */
+.overlay {
+  background: url("./assets/images/xbg_4.jpg.pagespeed.ic.jsNSabbn7j.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* faq styling */
+progress::-webkit-progress-bar {
+  background-color: #e6e6e6; /* Background color */
+  border-radius: 8px;
+}
+progress::-webkit-progress-value {
+  background-color: #6e3994; /* Custom value color */
+  border-radius: 8px;
+}
+progress::-moz-progress-bar {
+  background-color: #6e3994; /* For Firefox */
+}
