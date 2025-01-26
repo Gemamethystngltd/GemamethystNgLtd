@@ -5,6 +5,7 @@ import Solutions from "./components/solutions";
 import Ftco from "./components/Ftco";
 import Overlay from "./components/overlay";
 import Faq from "./components/Faq";
+import TeamMembers from "./components/TeamMembers";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Ftco />
         <Overlay />
         <Faq />
+        <TeamMembers />
       </main>
     </>
   );
