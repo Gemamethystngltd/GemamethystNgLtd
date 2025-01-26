@@ -1,4 +1,18 @@
-import { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from "swiper/modules";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+
 import teamMemeber1 from "../assets/images/team1.png";
 import teamMemeber2 from "../assets/images/team2.jpg";
 import teamMemeber3 from "../assets/images/team3.jpg";
@@ -6,7 +20,6 @@ import teamMemeber4 from "../assets/images/team4.jpg";
 import teamMemeber5 from "../assets/images/team5.jpg";
 
 function TeamMemebers() {
-  const [currentIndex, setCurrentIndex] = useState(0);
   const images = [
     teamMemeber1,
     teamMemeber2,
@@ -14,53 +27,45 @@ function TeamMemebers() {
     teamMemeber4,
     teamMemeber5,
   ];
-  const handlenext = () => {
-    setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+  let swiperInstance = null;
+
+  const handleMouseEnter = () => {
+    if (swiperInstance) swiperInstance.autoplay.stop();
   };
-  const handleprev = () => {
-    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+
+  const handleMouseLeave = () => {
+    if (swiperInstance) swiperInstance.autoplay.start();
   };
   return (
     <>
-      {" "}
-      <div className="slider-container">
-        <div className="slider_container flex gap-3">
-          {/* Display the current image */}
-          <img
-            src={images[currentIndex]}
-            alt={`Slide ${currentIndex}`}
-            className="slider-image w-[20%]"
-          />
-          <img
-            src={images[currentIndex + 1]}
-            alt={`Slide ${currentIndex}`}
-            className="slider-image w-[20%]"
-          />
-          <img
-            src={images[currentIndex + 2]}
-            alt={`Slide ${currentIndex}`}
-            className="slider-image w-[20%]"
-          />
-        </div>
-
-        {/* Navigation buttons */}
-        <button onClick={handleprev} className="slider-button">
-          Previous
-        </button>
-        <button onClick={handlenext} className="slider-button">
-          Next
-        </button>
-
-        {/* Optional: Dots for navigation */}
-        <div className="slider-dots">
-          {images.map((_, index) => (
-            <span
+      <div className="slider-container  w-[80%] mx-auto">
+        <Swiper
+          modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+          spaceBetween={50}
+          slidesPerView={3}
+          navigation
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 3000 }}
+          loop
+          onSwiper={(swiper) => {
+            swiperInstance = swiper;
+          }}
+        >
+          {images.map((image, index) => (
+            <SwiperSlide
               key={index}
-              className={`dot ${index === currentIndex ? "active" : ""}`}
-              onClick={() => setCurrentIndex(index)}
-            ></span>
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              className="h-[500px]"
+            >
+              <img
+                src={image}
+                alt={`Team Member ${index + 1}`}
+                className="slider-image w-full h-full object-cover rounded-md"
+              />
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
       </div>
     </>
   );

@@ -1,7 +1,7 @@
 import TeamMemebers from "./TeamMemebers";
 function TeamComponents() {
   return (
-    <section className="h-[20rem]">
+    <section className=" flex flex-col gap-[4rem] py-[4rem] mt-8">
       <header className="team_header  flex justify-between items-center w-[70%] mx-auto ">
         <div className="header_team_text flex flex-col gap-4">
           <h3 className=" text-[13px] text-webpurple leading-[23px] uppercase font-semibold">
