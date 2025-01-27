@@ -1,11 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  Autoplay,
-} from "swiper/modules";
+import { Pagination, Scrollbar, A11y, Autoplay } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
@@ -38,14 +32,13 @@ function TeamMemebers() {
   };
   return (
     <>
-      <div className="slider-container  w-[80%] mx-auto">
+      <div className="slider-container  w-[80%] mx-auto md:w-[90%]">
         <Swiper
-          modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-          spaceBetween={50}
+          modules={[Pagination, Scrollbar, A11y, Autoplay]}
+          spaceBetween={20}
           slidesPerView={3}
-          navigation
           pagination={{ clickable: true }}
-          autoplay={{ delay: 3000 }}
+          autoplay={{ delay: 1500 }}
           loop
           onSwiper={(swiper) => {
             swiperInstance = swiper;
@@ -56,7 +49,7 @@ function TeamMemebers() {
               key={index}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
-              className="h-[500px]"
+              className="h-[500px] lg:h-[400px] md:h-[350px] m:h-[200px]"
             >
               <img
                 src={image}

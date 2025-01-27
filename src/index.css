@@ -55,3 +55,9 @@ progress::-webkit-progress-value {
 progress::-moz-progress-bar {
   background-color: #6e3994; /* For Firefox */
 }
+/* porfolio component  styling  */
+.project_wrap_image {
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}

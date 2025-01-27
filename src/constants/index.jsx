@@ -6,6 +6,19 @@ import branding from "../assets/icons/branding.png";
 import web from "../assets/icons/web-programming.png";
 import cer from "../assets/icons/certificate.png";
 
+// porfolio imports:
+import bg1 from "../assets/images/xwork-1.jpg.pagespeed.ic.ll4YaSK4EN.jpg";
+import bg2 from "../assets/images/xwork-2.jpg.pagespeed.ic.r-iPsMtsGp.jpg";
+import bg3 from "../assets/images/xwork-3.jpg.pagespeed.ic.KnEiS52Z3l.jpg";
+import bg4 from "../assets/images/xwork-4.jpg.pagespeed.ic.LMea4nnNOz.jpg";
+import bg5 from "../assets/images/xwork-7.jpg.pagespeed.ic.SotmrmTuoS.jpg";
+import bg6 from "../assets/images/xwork-8.jpg.pagespeed.ic.kEJc9g0qrQ.jpg";
+
+// testimonia imports:
+import Avatar1 from "../assets/images/xperson_1.jpg.pagespeed.ic.P4pHl6glbj.jpg";
+import Avatar2 from "../assets/images/xperson_2.jpg.pagespeed.ic.yyrmjBH91b.jpg";
+import Avatar3 from "../assets/images/xstaff-1.jpg.pagespeed.ic.eGaw1QpE70.jpg";
+
 export const faqs = [
   {
     question: "How to fix a problem?",
@@ -76,5 +89,69 @@ export const services = [
   {
     text: " UX/UI Design",
     serviceicon: ux,
+  },
+];
+
+export const porfolio = [
+  {
+    title: "Web Application",
+    description: "Interior Design",
+    bgImage: bg1,
+  },
+  {
+    title: "Web Application",
+    description: "Interior Design",
+    bgImage: bg2,
+  },
+  {
+    title: "Web Application",
+    description: "Interior Design",
+    bgImage: bg3,
+  },
+  {
+    title: "Web Application",
+    description: "Interior Design",
+    bgImage: bg4,
+  },
+  {
+    title: "Web Application",
+    description: "Interior Design",
+    bgImage: bg5,
+  },
+  {
+    title: "Web Application",
+    description: "Interior Design",
+    bgImage: bg6,
+  },
+];
+
+export const testimonials = [
+  {
+    quote:
+      "AIworksquad has been a game-changer for my business. Their virtual assistants have helped me manage complex projects, handle customer queries, and reduce costs.",
+    name: "Larry Devis",
+    title: "SWE Owner",
+    img: Avatar1,
+  },
+  {
+    quote:
+      "AIworksquad's state-of-the-art technology has helped me stay ahead of the competition. Their AI-powered virtual assistant has enabled me to automate tasks, reduce errors, and enhance efficiency.",
+    name: "Rajiv Manohar",
+    title: "SWE Owner",
+    img: Avatar2,
+  },
+  {
+    quote:
+      "Since partnering with AIworksquad, I've seen a significant improvement in my business's productivity. Their AI-powered technology has helped me save time and make informed decisions.",
+    name: "Lynda",
+    title: "SWE Owner",
+    img: Avatar3,
+  },
+  {
+    quote:
+      "Since partnering with AIworksquad, I've seen a significant improvement in my business's productivity. Their AI-powered technology has helped me save time and make informed decisions .",
+    name: "Larry Davis",
+    title: "SWE Owner",
+    img: Avatar1,
   },
 ];

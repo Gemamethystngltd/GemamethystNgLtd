@@ -10,11 +10,10 @@ export default {
       },
     },
     screens: {
-      sm: { max: "639px" }, // For screens <= 639px
-      md: { max: "767px" }, // For screens <= 767px
-      lg: { max: "1023px" }, // For screens <= 1023px
-      xl: { max: "1279px" }, // For screens <= 1279px
-      "2xl": { max: "1535px" }, // For screens <= 1535px
+      lg: { max: "1024px" },
+      md: { max: "800px" },
+      m: { max: "500px" },
+      sm: { max: "350px" },
     },
   },
   plugins: [],
