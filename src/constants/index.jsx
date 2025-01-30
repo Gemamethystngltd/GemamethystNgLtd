@@ -19,6 +19,10 @@ import Avatar1 from "../assets/images/xperson_1.jpg.pagespeed.ic.P4pHl6glbj.jpg"
 import Avatar2 from "../assets/images/xperson_2.jpg.pagespeed.ic.yyrmjBH91b.jpg";
 import Avatar3 from "../assets/images/xstaff-1.jpg.pagespeed.ic.eGaw1QpE70.jpg";
 
+// blog sevtion imports
+import img1 from "../assets/images/ximage_1.jpg.pagespeed.ic.2BInOJMs0v.jpg";
+import img2 from "../assets/images/ximage_2.jpg.pagespeed.ic.fDt7QyzCfC.jpg";
+import img3 from "../assets/images/ximage_3.jpg.pagespeed.ic.CzImA-z_Ch.jpg";
 export const faqs = [
   {
     question: "How to fix a problem?",
@@ -153,5 +157,26 @@ export const testimonials = [
     name: "Larry Davis",
     title: "SWE Owner",
     img: Avatar1,
+  },
+];
+
+export const blogspost = [
+  {
+    img: img1,
+    title: "Marketing Strategies for Digital Ecosystem",
+    description:
+      "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...",
+  },
+  {
+    img: img2,
+    title: "Marketing Strategies for Digital Ecosystem",
+    description:
+      "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...",
+  },
+  {
+    img: img3,
+    title: "Marketing Strategies for Digital Ecosystem",
+    description:
+      "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...",
   },
 ];

@@ -8,6 +8,7 @@ import Faq from "./components/Faq";
 import TeamComponents from "./components/TeamComponents";
 import PorfolioComp from "./components/portfolio";
 import Testimonails from "./components/Testimonials";
+import Blog from "./components/Blog";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <TeamComponents />
         <PorfolioComp />
         <Testimonails />
+        <Blog />
       </main>
     </>
   );
