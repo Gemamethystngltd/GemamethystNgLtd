@@ -1,6 +1,6 @@
 import Header from "./compheader";
 import Porfoliobox from "./porfolioBox";
-import { porfolio } from "../constants";
+import { porfolio } from "../../constants";
 
 const PorfolioComp = () => {
   return (

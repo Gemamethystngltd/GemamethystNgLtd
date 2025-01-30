@@ -7,11 +7,11 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-import teamMemeber1 from "../assets/images/team1.png";
-import teamMemeber2 from "../assets/images/team2.jpg";
-import teamMemeber3 from "../assets/images/team3.jpg";
-import teamMemeber4 from "../assets/images/team4.jpg";
-import teamMemeber5 from "../assets/images/team5.jpg";
+import teamMemeber1 from "../../assets/images/team1.png";
+import teamMemeber2 from "../../assets/images/team2.jpg";
+import teamMemeber3 from "../../assets/images/team3.jpg";
+import teamMemeber4 from "../../assets/images/team4.jpg";
+import teamMemeber5 from "../../assets/images/team5.jpg";
 
 function TeamMemebers() {
   const images = [

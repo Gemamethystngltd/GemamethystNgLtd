@@ -1,5 +1,5 @@
-import img1 from "../assets/images/xabout-1.jpg.pagespeed.ic.akjHwrNTaM.jpg";
-import lightBuld from "../assets/icons/light-bulb.png";
+import img1 from "../../assets/images/xabout-1.jpg.pagespeed.ic.akjHwrNTaM.jpg";
+import lightBuld from "../../assets/icons/light-bulb.png";
 function Ftco() {
   return (
     <>

@@ -1,5 +1,5 @@
 import SolutionBox from "./solutionsBox";
-import { services } from "../constants";
+import { services } from "../../constants";
 const Solutions = () => {
   return (
     <>

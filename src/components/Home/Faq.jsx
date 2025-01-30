@@ -1,6 +1,6 @@
 import { useState } from "react";
-import img2 from "../assets/images/xabout-2.jpg.pagespeed.ic.GABFWe5WUO.jpg";
-import { faqs } from "../constants";
+import img2 from "../../assets/images/xabout-2.jpg.pagespeed.ic.GABFWe5WUO.jpg";
+import { faqs } from "../../constants";
 
 function Faq() {
   const [activeIndex, setActiveIndex] = useState(null);

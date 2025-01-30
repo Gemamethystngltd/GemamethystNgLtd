@@ -1,8 +1,9 @@
 import BlogPost from "./BlogPost";
-import { blogspost } from "../constants";
+import { blogspost } from "../../constants";
+import Newsletter from "./Newsletter";
 function Blog() {
   return (
-    <section className="blog_section    h-[130vh] pt-20 flex flex-col gap-16">
+    <section className="blog_section relative    h-[130vh] pt-20 flex flex-col gap-16">
       <header className=" flex flex-col   gap-2 items-center">
         <h3 className=" text-[13px] leading-[23px] text-webpurple font-semibold uppercase">
           Our Blog
@@ -23,6 +24,7 @@ function Blog() {
           );
         })}
       </div>
+      <Newsletter />
     </section>
   );
 }

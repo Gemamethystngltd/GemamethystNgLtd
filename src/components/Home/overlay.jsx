@@ -1,7 +1,7 @@
-import file from "../assets/icons/documents.png";
-import waiter from "../assets/icons/waiter.png";
-import service from "../assets/icons/customer-service.png";
-import satisfaction from "../assets/icons/customer-satisfaction.png";
+import file from "../../assets/icons/documents.png";
+import waiter from "../../assets/icons/waiter.png";
+import service from "../../assets/icons/customer-service.png";
+import satisfaction from "../../assets/icons/customer-satisfaction.png";
 
 const Overlay = () => {
   const data = [

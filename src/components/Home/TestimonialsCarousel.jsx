@@ -1,5 +1,5 @@
 import Slider from "react-slick";
-import { testimonials } from "../constants";
+import { testimonials } from "../../constants";
 
 function TestimonialsCarousel() {
   const settings = {

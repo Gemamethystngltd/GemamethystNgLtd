@@ -22,6 +22,9 @@
 .nav_links .links:hover {
   color: #6e3994;
 }
+.active {
+  color: #6e3994;
+}
 
 /* herosection component styling */
 .hero_section {
