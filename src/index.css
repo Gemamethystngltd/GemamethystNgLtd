@@ -33,6 +33,13 @@
   background-size: cover;
   height: 100vh;
 }
+/* subhero section compontt in the about and other pages  */
+.sub_hero_section {
+  background: url("./assets/images/xbg_4.jpg.pagespeed.ic.jsNSabbn7j.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
 /* solutions_sections conponents styling */
 .solutions_sections {
   background: url("./assets/backgroundrepeat.png");

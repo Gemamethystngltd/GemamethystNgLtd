@@ -16,7 +16,7 @@ const Testimonails = () => {
         </div>
       </header>
 
-      <div className="    overflow-visible">
+      <div className=" overflow-hidden h-[35vh]">
         <TestimonialsCarousel />
       </div>
     </section>

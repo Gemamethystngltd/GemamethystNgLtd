@@ -1,7 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 function NavBar() {
   return (
-    <nav className="flex justify-around absolute w-full items-center  bg-white/20 backdrop-blur-[1px] top-10 py-7 px-[2rem]">
+    <nav className="flex justify-around absolute w-full items-center  bg-white/20 backdrop-blur-[1px] top-10 py-4 px-[2rem]">
       <div className="logo_container ">
         <Link to="/">
           {" "}

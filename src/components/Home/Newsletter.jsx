@@ -1,6 +1,6 @@
 function Newsletter() {
   return (
-    <div className="absolute overlay overflow-hidden rounded-lg w-[70%] bottom-[-13%] left-[50%] flex flex-col  justify-center items-center translate-x-[-50%] h-[30%]">
+    <div className="absolute overlay overflow-hidden rounded-lg h-[40vh] w-[70%] bottom-[-6rem] left-[50%] flex flex-col  justify-center items-center translate-x-[-50%] ">
       <div className=" inset-0 bg-[#662d91]/50 absolute -z-20  backdrop-blur-[10px]"></div>
       <div className="new_content flex items-center flex-col">
         <h1 className="text-[32px] text-white leading-[48px] font-semibold uppercase">
