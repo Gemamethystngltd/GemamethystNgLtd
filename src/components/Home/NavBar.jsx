@@ -19,7 +19,7 @@ function NavBar() {
           <NavLink to="/pricing"> Pricing</NavLink>
         </li>
         <li className="links text-[18px] leading-[27px] font-medium ">
-          <NavLink to="/portfolio"> Porfoio</NavLink>
+          <NavLink to="/portfolio"> Portfolio</NavLink>
         </li>
         <li className="links text-[18px] leading-[27px] font-medium ">
           <NavLink to="/blog"> Blog</NavLink>

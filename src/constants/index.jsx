@@ -23,6 +23,10 @@ import Avatar3 from "../assets/images/xstaff-1.jpg.pagespeed.ic.eGaw1QpE70.jpg";
 import img1 from "../assets/images/ximage_1.jpg.pagespeed.ic.2BInOJMs0v.jpg";
 import img2 from "../assets/images/ximage_2.jpg.pagespeed.ic.fDt7QyzCfC.jpg";
 import img3 from "../assets/images/ximage_3.jpg.pagespeed.ic.CzImA-z_Ch.jpg";
+import img4 from "../assets/images/xwork-9.jpg.pagespeed.ic.BYds7aMzrK.jpg";
+// import img5 from "../assets/images/xwork-8.jpg.pagespeed.ic.kEJc9g0qrQ.jpg";
+// import img6 from "../assets/images/xwork-7.jpg.pagespeed.ic.SotmrmTuoS.jpg";
+// import img7 from "../assets/images/ximage_4.jpg.pagespeed.ic.9VUxuBaVRa.jpg";
 export const faqs = [
   {
     question: "How to fix a problem?",
@@ -178,5 +182,146 @@ export const blogspost = [
     title: "Marketing Strategies for Digital Ecosystem",
     description:
       "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...",
+  },
+];
+
+export const blogspostlong = [
+  {
+    img: img1,
+    title: "Marketing Strategies for Digital Ecosystem",
+    description:
+      "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...",
+  },
+  {
+    img: img2,
+    title: "Marketing Strategies for Digital Ecosystem",
+    description:
+      "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...",
+  },
+  {
+    img: img3,
+    title: "Marketing Strategies for Digital Ecosystem",
+    description:
+      "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...",
+  },
+  {
+    img: img4,
+    title: "Marketing Strategies for Digital Ecosystem",
+    description:
+      "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...",
+  },
+  {
+    img: img3,
+    title: "Marketing Strategies for Digital Ecosystem",
+    description:
+      "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...",
+  },
+  {
+    img: img1,
+    title: "Marketing Strategies for Digital Ecosystem",
+    description:
+      "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...",
+  },
+  {
+    img: img2,
+    title: "Marketing Strategies for Digital Ecosystem",
+    description:
+      "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...",
+  },
+  {
+    img: img2,
+    title: "Marketing Strategies for Digital Ecosystem",
+    description:
+      "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...",
+  },
+  {
+    img: img4,
+    title: "Marketing Strategies for Digital Ecosystem",
+    description:
+      "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...",
+  },
+  {
+    img: img1,
+    title: "Marketing Strategies for Digital Ecosystem",
+    description:
+      "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...",
+  },
+];
+
+export const porfoliolong = [
+  {
+    title: "Web Application",
+    description: "Interior Design",
+    bgImage: bg1,
+  },
+  {
+    title: "Web Application",
+    description: "Interior Design",
+    bgImage: bg2,
+  },
+  {
+    title: "Web Application",
+    description: "Interior Design",
+    bgImage: bg3,
+  },
+  {
+    title: "Web Application",
+    description: "Interior Design",
+    bgImage: bg4,
+  },
+  {
+    title: "Web Application",
+    description: "Interior Design",
+    bgImage: bg5,
+  },
+  {
+    title: "Web Application",
+    description: "Interior Design",
+    bgImage: bg2,
+  },
+  {
+    title: "Web Application",
+    description: "Interior Design",
+    bgImage: bg4,
+  },
+  {
+    title: "Web Application",
+    description: "Interior Design",
+    bgImage: bg1,
+  },
+  {
+    title: "Web Application",
+    description: "Interior Design",
+    bgImage: bg5,
+  },
+  {
+    title: "Web Application",
+    description: "Interior Design",
+    bgImage: bg2,
+  },
+  {
+    title: "Web Application",
+    description: "Interior Design",
+    bgImage: bg5,
+  },
+  {
+    title: "Web Application",
+    description: "Interior Design",
+    bgImage: bg1,
+  },
+  {
+    title: "Web Application",
+    description: "Interior Design",
+    bgImage: bg4,
+  },
+  {
+    title: "Web Application",
+    description: "Interior Design",
+    bgImage: bg2,
+  },
+  {
+    title: "Web Application",
+    description: "Interior Design",
+    bgImage: bg6,
   },
 ];
