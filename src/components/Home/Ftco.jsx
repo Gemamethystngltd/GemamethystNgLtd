@@ -3,48 +3,50 @@ import lightBuld from "../../assets/icons/light-bulb.png";
 function Ftco() {
   return (
     <>
-      <section className="ftco_section flex relative">
-        <div className="img_container flex  w-[50%]">
+      <section className="ftco_section flex relative laptop:h-[105vh]  phoneL:flex-col phoneL:w-full phoneL:h-auto ">
+        <div className="img_container flex  w-[50%] phoneL:w-[100%] phoneL:mb-4 phoneL:h-[50vh] ">
           <img
-            className="w-1/2 ml-auto mr-[4rem] h-full"
+            className="w-1/2 ml-auto mr-[4rem] h-full laptop:w-full laptop:mr-1 laptop:m-0 phoneL:h-[100%] object-cover  phoneL:m-0 phoneL:ml-0"
             src={img1}
             alt="about"
           />
         </div>
 
-        <div className="ftco_text_container w-1/2 flex flex-col p-8 justify-center  gap-4">
-          <h3 className="uppercase font-semibold leading-[23px] text-[13px] text-webpurple">
+        <div className="ftco_text_container w-1/2 flex flex-col p-8 justify-center  gap-4 tablet:gap-2 phoneL:w-full phoneL:p-4 phoneL:gap-4">
+          <h3 className="uppercase font-semibold leading-[23px] text-[13px] text-webpurple tablet:text-[11px] phoneL:text-[10px] phoneL:tracking-[2px] phoneP:text-[10px] phoneP:tracking-[1px]">
             Welcome to Gemamethystng
           </h3>
-          <h1 className="font-bold uppercase tracking-[3px] text-[34px] leading-[48px]">
+          <h1 className="font-bold uppercase tracking-[3px] text-[34px] leading-[48px] laptop:text-[30px] laptop:leading-[40px] laptop:tracking-[2px] tablet:text-[25px] tablet:leading-[35px] phoneL:text-[25px] phoneL:leading-[30px] phoneL:tracking-[1px] phoneP:text-[20px] phoneP:leading-[25px] phoneP:tracking-[1px]">
             Highest
             <br /> Creative Standards
           </h1>
-          <p className="text-[16px] w-[70%] font-normal leading-[25px] text-[#999999]">
+          <p className="text-[16px] w-[70%] font-normal leading-[25px] text-[#999999] laptop:text-[14px] laptop:leading-[20px] laptop:w-[90%] tablet:text-[13px]  phoneL:text-[12px] phoneL:leading-[18px] phoneL:w-[100%] phoneP:text-[10px] phoneP:leading-[16px] phoneP:w-[100%]">
             To revolutionize project management and operational efficiency for
             SMEs by delivering AI-powered and data-driven tools, while
             empowering students and startups in the AEC and Oil & Gas industries
             through world-class training, practical guidance, and innovative
             resources, fostering sustainable growth and impactful careers.
           </p>
-        </div>
 
-        <div className="absolute bg-webpurple bottom-[1rem] right-[45%] translate-x-[50%] w-[20%] p-4 flex gap-6">
-          <div className="ftco_icon ">
-            <div className="bg-black rounded-full  p-4">
-              <img className="w-[50px] " src={lightBuld} alt="lightbulb" />
+          <div className="absolute bg-webpurple bottom-[1rem] right-[45%] translate-x-[50%] w-[20%] p-4 flex gap-6 laptop:w-[28%] laptop:p-2 tablet:w-[35%]  phoneL:static phoneL:w-full phoneL:translate-x-0">
+            <div className="ftco_icon ">
+              <div className="bg-black rounded-full  p-4  phoneL:p-3 ">
+                <img
+                  className="w-[50px] laptop:w-[40px] tablet:w-[35px] phoneL:w-[30px]"
+                  src={lightBuld}
+                  alt="lightbulb"
+                />
+              </div>
             </div>
-
-            {/* <i className="fa-regular text-[30px] fa-lightbulb bg-black text-white rounded-full  p-5"></i> */}
-          </div>
-          <div className="ftco_text flex flex-col gap-1">
-            <h2 className="font-bold leading-[32px] text-[32px] text-white ">
-              3
-            </h2>
-            <h3 className="text-[12px] leading-[14px] font-bold text-white uppercase">
-              Years <br />
-              of Experience
-            </h3>
+            <div className="ftco_text flex flex-col gap-1 justify-center">
+              <h2 className="font-bold leading-[32px] text-[32px] text-white  laptop:text-[24px] laptop:leading-[24px] phoneL:text-[20px] phoneL:leading-[20px] phoneP:text-[16px] phoneP:leading-[16px]">
+                3
+              </h2>
+              <h3 className="text-[12px] leading-[14px] font-bold text-white uppercase laptop:text-[10px] phoneL:text-[8px] phoneP:text-[6px]">
+                Years <br />
+                of Experience
+              </h3>
+            </div>
           </div>
         </div>
       </section>

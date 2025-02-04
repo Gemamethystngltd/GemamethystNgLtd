@@ -11,20 +11,20 @@ function NavBar() {
         </Link>
       </div>
       <ul className="nav_links flex gap-16 items-center text-[1.05rem] font-semibold">
-        <li className="links text-[18px] leading-[27px] font-medium ">
+        <li className="links text-[15px] leading-[27px] font-medium ">
           {" "}
           <NavLink to="/about">About</NavLink>
         </li>
-        <li className="links text-[18px] leading-[27px] font-medium ">
+        <li className="links text-[15px] leading-[27px] font-medium ">
           <NavLink to="/pricing"> Pricing</NavLink>
         </li>
-        <li className="links text-[18px] leading-[27px] font-medium ">
+        <li className="links text-[15px] leading-[27px] font-medium ">
           <NavLink to="/portfolio"> Portfolio</NavLink>
         </li>
-        <li className="links text-[18px] leading-[27px] font-medium ">
+        <li className="links text-[15px] leading-[27px] font-medium ">
           <NavLink to="/blog"> Blog</NavLink>
         </li>
-        <li className="links text-[18px] leading-[27px] font-medium ">
+        <li className="links text-[15px] leading-[27px] font-medium ">
           <NavLink to="/contact">Contact</NavLink>
         </li>
 

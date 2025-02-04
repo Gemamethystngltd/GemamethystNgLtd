@@ -5,6 +5,7 @@ import AboutPage from "./Pages/AboutPage";
 import PricingPage from "./Pages/PricingPage";
 import PorfolioPage from "./Pages/PorfolioPage";
 import BlogPage from "./Pages/BlogPage";
+import ContactPage from "./Pages/ContactPage";
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
         <Route path="/pricing" element={<PricingPage />} />
         <Route path="/portfolio" element={<PorfolioPage />} />
         <Route path="/blog" element={<BlogPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </>
   );
