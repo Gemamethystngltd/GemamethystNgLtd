@@ -16,7 +16,7 @@ function PorfoliopagesSections() {
   const endIndex = startIndex + itemsPerPage;
   const currentItems = porfoliolong.slice(startIndex, endIndex);
   return (
-    <section className="portList h-[120vh] py-[4rem] flex flex-col gap-8">
+    <section className="portList h-[150vh] py-[4rem] flex flex-col gap-8">
       <div className="portfolio_sections w-[70%] mx-auto grid grid-cols-3 gap-6  mt-16 p-1">
         {currentItems.map((item, index) => {
           return <Porfoliobox key={index} bgImage={item.bgImage} />;

@@ -6,8 +6,8 @@ import img3 from "../assets/images/ximage_1.jpg.pagespeed.ic.2BInOJMs0v.jpg";
 function PricingComps() {
   return (
     <section className=" bg-[#F4F5F9] h-[130vh]   flex justify-center items-center">
-      <div className="prices_content">
-        <header className="text-center">
+      <div className="prices_content flex flex-col gap-8">
+        <header className="text-center ">
           <h2 className="font-semibold text-webpurple leading-[23px] text-[14px] uppercase">
             Pricing
           </h2>

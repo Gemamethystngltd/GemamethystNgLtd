@@ -206,25 +206,25 @@ export const blogspostlong = [
   },
   {
     img: img4,
-    title: "Marketing Strategies for Digital Ecosystem",
+    title: "Strategies Marketing  for Digital Ecosystem",
     description:
       "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...",
   },
   {
     img: img3,
-    title: "Marketing Strategies for Digital Ecosystem",
+    title: "Digital Marketing Strategies for  Ecosystem",
     description:
       "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...",
   },
   {
     img: img1,
-    title: "Marketing Strategies for Digital Ecosystem",
+    title: "Ecosystem Marketing Strategies for Digital ",
     description:
       "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...",
   },
   {
     img: img2,
-    title: "Marketing Strategies for Digital Ecosystem",
+    title: "Local Marketing Strategies for  Ecosystem",
     description:
       "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...",
   },
