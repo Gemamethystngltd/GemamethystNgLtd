@@ -10,34 +10,31 @@ function Faq() {
   };
   return (
     <>
-      <section className="flex bg-[#f4f5f9] ">
-        <div className="faq_text_container flex flex-col  justify-center p-4 w-1/2">
-          <div className="fa_text_content w-[70%] self-end mt-16">
-            <header className="faq_header flex flex-col gap-8 ">
-              <h2 className=" font-semibold leading-[23px] text-[13px] text-webpurple uppercase">
+      <section className="flex bg-[#f4f5f9]  tablet:flex-col-reverse ">
+        <div className="faq_text_container flex flex-col  justify-center p-4 w-1/2  tablet:w-full  phoneL:p-2">
+          <div className="fa_text_content w-[70%]  self-end mt-16 laptop:w-[100%] laptop:mt-10 ">
+            <header className="faq_header flex flex-col gap-8 laptop:gap-4 tablet:gap-2 ">
+              <h2 className=" font-semibold leading-[23px] text-[13px] text-webpurple uppercase laptop:text-[11px] laptop:leading-[21px] laptop:tracking-[2px] phoneL:text-[10px] phoneL:tracking-[1px] phoneP:text-[10px] phoneP:tracking-[1px]">
                 Frequently Asked Questions
               </h2>
-              <h1 className="text-[34px] leading-[48px] font-bold text-[black] uppercase tracking-[3px]">
+              <h1 className="text-[34px] leading-[48px] font-bold text-[black] uppercase tracking-[3px] laptop:text-[30px] laptop:leading-[40px] laptop:tracking-[2px] tablet:text-[20px] tablet:leading-[30px] phoneL:text-[18px] phoneL:leading-[25px] phoneP:text-[16px] phoneP:leading-[20px]">
                 Frequently
                 <br /> Asked Questions?
               </h1>
             </header>
 
-            <div className="flex gap-3 flex-col mt-10 ">
+            <div className="flex gap-3  flex-col mt-10  phoneL:mt-5 ">
               {faqs.map((faq, index) => (
-                <div
-                  key={index}
-                  className="faq_container_box w-full   max-w-2xl   h-auto "
-                >
+                <div key={index} className="faq_container_box w-full  h-auto ">
                   <button
-                    className={`fa_btn w-full  border border-1 shadow-md text-left py-5 px-4   ${
+                    className={`fa_btn w-[100%]  border border-1 shadow-md text-left py-5 px-4 laptop:py-4 laptop:px-3 tablet:py-2 tablet:p2  ${
                       activeIndex === index ? "bg-webpurple" : "bg-[#ffff]"
                     } `}
                     onClick={() => handleToggle(index)}
                   >
                     <div className="flex justify-between items-center overflow-hidden">
                       <span
-                        className={`faq-question text-[18px] leading-[27px] font-normal ${
+                        className={`faq-question text-[18px] leading-[27px] font-normal laptop:text-[16px] laptop:leading-[20px] tablet:text-[12px] tablet:leading-[12px] ${
                           activeIndex === index ? "text-white" : "text-black"
                         }  uppercase`}
                       >
@@ -51,9 +48,9 @@ function Faq() {
                         }   font-semibold text-[18px]   py-1 pr-1`}
                       >
                         {activeIndex === index ? (
-                          <i className="fa-solid fa-chevron-down"></i>
+                          <i className="fa-solid fa-chevron-down laptop:text-[.9rem] phoneL:text-[.8rem]"></i>
                         ) : (
-                          <i className="fa-solid fa-chevron-up"></i>
+                          <i className="fa-solid fa-chevron-up laptop:text-[.9rem] phoneL:text-[.8rem]"></i>
                         )}
                       </span>
                     </div>
@@ -69,7 +66,7 @@ function Faq() {
                           {faq.answer.map((ans, i) => {
                             return (
                               <li
-                                className="py-2 text-[16px] text-black leading-[29px] font-normal"
+                                className="py-2 text-[16px] text-black leading-[29px] font-normal laptop:text-[14px] laptop:leading-[20px] phoneL:text-[12px] phoneL:leading-[18px] phoneP:text-[10px] phoneP:leading-[16px]"
                                 key={i}
                               >
                                 {ans}
@@ -86,24 +83,24 @@ function Faq() {
           </div>
         </div>
 
-        <div className="faq_img_container p-8 w-1/2">
-          <div className="faq_img_content w-[70%] flex flex-col gap-10">
+        <div className="faq_img_container p-8 w-1/2 tablet:w-full phoneL:p-2">
+          <div className="faq_img_content w-[70%] flex flex-col gap-10 laptop:w-full ">
             <hewader>
               <img src={img2} alt="img" className="object-cover" />
             </hewader>
-            <div className="faq_img_text flex flex-col gap-16">
-              <h1 className="text-[32px] leading-[48px] font-bold text-[black] uppercase tracking-[1px]">
+            <div className="faq_img_text flex flex-col gap-16 laptop:gap-10 phoneL:gap-6">
+              <h1 className="text-[32px] leading-[48px] font-bold text-[black] uppercase tracking-[1px] laptop:text-[28px] laptop:leading-[38px] laptop:tracking-[2px] tablet:text-[20px] tablet:leading-[30px] phoneL:text-[18px] phoneL:leading-[25px] phoneP:text-[16px] phoneP:leading-[20px]">
                 We Are Very <br />
                 Experienced & Professionals
               </h1>
-              <div className="faq_progress flex flex-col gap-8">
+              <div className="faq_progress flex flex-col gap-8 phoneL:gap-4">
                 {/* individual sections */}
                 <div className="faq_progress_bar_container flex  flex-col gap-2 w-full">
                   <div className="faq_progress_bar_header flex justify-between ">
-                    <h2 className="font-bold uppercase text-[14px] leading-[21px] ">
+                    <h2 className="font-bold uppercase text-[14px] leading-[21px] phoneL:text-[12px] ">
                       Creative Design
                     </h2>
-                    <h2 className="text-[16px] pr-[5%] font-bold leading-[19px] text-webpurple ">
+                    <h2 className="text-[16px] pr-[5%] font-bold leading-[19px] text-webpurple  phoneL:text-[14px]">
                       95%
                     </h2>
                   </div>
@@ -115,10 +112,10 @@ function Faq() {
                 </div>
                 <div className="faq_progress_bar_container flex  flex-col gap-2 w-full">
                   <div className="faq_progress_bar_header flex justify-between ">
-                    <h2 className="font-bold uppercase text-[14px] leading-[21px] ">
+                    <h2 className="font-bold uppercase text-[14px] leading-[21px] phoneL:text-[12px]">
                       Product Engineering
                     </h2>
-                    <h2 className="text-[16px] pr-[15%] font-bold leading-[19px] text-webpurple ">
+                    <h2 className="text-[16px] pr-[15%] font-bold leading-[19px] text-webpurple phoneL:text-[14px]">
                       85%
                     </h2>
                   </div>
@@ -130,10 +127,10 @@ function Faq() {
                 </div>
                 <div className="faq_progress_bar_container flex  flex-col gap-2 w-full">
                   <div className="faq_progress_bar_header flex justify-between ">
-                    <h2 className="font-bold uppercase text-[14px] leading-[21px] ">
+                    <h2 className="font-bold uppercase text-[14px] leading-[21px] phoneL:text-[12px] ">
                       Marketing Strategy
                     </h2>
-                    <h2 className="text-[16px] pr-[5%] font-bold leading-[19px] text-webpurple ">
+                    <h2 className="text-[16px] pr-[5%] font-bold leading-[19px] text-webpurple  phoneL:text-[14px] ">
                       95%
                     </h2>
                   </div>
@@ -146,10 +143,10 @@ function Faq() {
 
                 <div className="faq_progress_bar_container flex  flex-col gap-2 w-full">
                   <div className="faq_progress_bar_header flex justify-between ">
-                    <h2 className="font-bold uppercase text-[14px] leading-[21px] ">
+                    <h2 className="font-bold uppercase text-[14px] leading-[21px] phoneL:text-[12px] ">
                       Support Tips
                     </h2>
-                    <h2 className="text-[16px] pr-[10%] font-bold leading-[19px] text-webpurple ">
+                    <h2 className="text-[16px] pr-[10%] font-bold leading-[19px] text-webpurple  phoneL:text-[14px]">
                       90%
                     </h2>
                   </div>

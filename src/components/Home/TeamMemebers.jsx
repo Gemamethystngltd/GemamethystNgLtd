@@ -32,7 +32,7 @@ function TeamMemebers() {
   };
   return (
     <>
-      <div className="slider-container  w-[80%] mx-auto md:w-[90%]">
+      <div className="slider-container  w-[80%] mx-auto phoneL:w-[90%]">
         <Swiper
           modules={[Pagination, Scrollbar, A11y, Autoplay]}
           spaceBetween={20}
@@ -40,6 +40,13 @@ function TeamMemebers() {
           pagination={{ clickable: true }}
           autoplay={{ delay: 1500 }}
           loop
+          breakpoints={{
+            320: { slidesPerView: 1 },
+            480: { slidesPerView: 1.5 },
+            500: { slidesPerView: 2 },
+            900: { slidesPerView: 3 },
+            1280: { slidesPerView: 3 },
+          }}
           onSwiper={(swiper) => {
             swiperInstance = swiper;
           }}
@@ -49,7 +56,7 @@ function TeamMemebers() {
               key={index}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
-              className="h-[500px] lg:h-[400px] md:h-[350px] m:h-[200px]"
+              className="h-[550px] laptop:h-[400px] phoneL:h-[500px]  phoneP:h-[400px]"
             >
               <img
                 src={image}

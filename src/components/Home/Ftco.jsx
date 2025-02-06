@@ -42,7 +42,7 @@ function Ftco() {
               <h2 className="font-bold leading-[32px] text-[32px] text-white  laptop:text-[24px] laptop:leading-[24px] phoneL:text-[20px] phoneL:leading-[20px] phoneP:text-[16px] phoneP:leading-[16px]">
                 3
               </h2>
-              <h3 className="text-[12px] leading-[14px] font-bold text-white uppercase laptop:text-[10px] phoneL:text-[8px] phoneP:text-[6px]">
+              <h3 className="text-[12px] leading-[14px] font-bold text-white uppercase laptop:text-[10px] phoneL:text-[8px] phoneP:text-[7px] phoneP:leading-[8px]">
                 Years <br />
                 of Experience
               </h3>
