@@ -4,7 +4,7 @@ const Porfoliobox = ({ bgImage, tiitle, description }) => {
       style={{
         background: `url(${bgImage}) `,
       }}
-      className={`project_wrap_image img d-flex align-items-end  w-[319px] h-[340px] rounded-md  shadow-lg `}
+      className={`project_wrap_image img d-flex align-items-end  h-[340px] rounded-md  shadow-lg  tablet:h-[300px] phoneL:h-[320px] phoneL:w-[90%] `}
     >
       <div className="text">
         <span>{tiitle}</span>
