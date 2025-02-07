@@ -2,11 +2,11 @@ const HeroSection = () => {
   return (
     <>
       <section className="hero_section flex items-center">
-        <div className="hero_content ml-[16rem] flex flex-col  laptop:ml-[6rem] tablet:ml-[3rem] phoneP:ml-4">
+        <div className="hero_content ml-[16rem] flex flex-col  laptop:ml-[6rem] tablet:ml-[3rem] phoneL:ml-5 phoneP:ml-4">
           <h3 className="text-white leading-[23px] font-bold text-[13px] uppercase tracking-[5px] mb-[10px] tablet:text-[11px] phoneL:text-[10px] phoneL:tracking-[2px] phoneL:mb-[8px]  phoneP:text-[10px] phonep:mb-[6px] phoneP:tracking-[1px] ">
             welcome To Gemamethystng
           </h3>
-          <h1 className=" text-white text-[52px] w-[50%] font-bold uppercase tracking-[1px] mb-[20px] leading-[3.5rem] laptop:text-[40px] laptop:w-[60%] laptop:leading-[2.5rem] laptop:mb-[10px] tablet:text-[35px]  tablet:w-[70%] tablet:leading-[2.4rem] tablet:mb-[8px] phoneL:w-[90%] phoneL:text-[30px] phoneL:leading-[2rem] phoneL:mb-[6px] phoneP:text-[20px] phoneP:leading-[1.6rem] phoneP:w-full phoneP:mb-[3px]">
+          <h1 className=" text-white text-[52px] w-[50%] font-bold uppercase tracking-[1px] mb-[20px] leading-[3.5rem] laptop:text-[40px] laptop:w-[60%] laptop:leading-[2.5rem] laptop:mb-[10px] tablet:text-[35px]  tablet:w-[70%] tablet:leading-[2.4rem] tablet:mb-[8px] phoneL:w-[90%] phoneL:text-[25px] phoneL:leading-[1.8rem] phoneL:mb-[6px] phoneP:text-[20px] phoneP:leading-[1.6rem] phoneP:w-full phoneP:mb-[3px]">
             Professinal & Creative Design Solution
           </h1>
           <p className="text-lightwhite font-normal text-[16px] laptop:text-[13px] tablet:text-[12px] phoneL:text-[11px] phoneP:text-[10px] ">
