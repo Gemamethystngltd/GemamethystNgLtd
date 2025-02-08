@@ -13,7 +13,7 @@ function HomePage() {
   return (
     <>
       <main className="relative">
-        {/* <NavBar /> */}
+        <NavBar />
         <HeroSection />
         <Solutions />
         <Ftco />

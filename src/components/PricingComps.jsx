@@ -5,17 +5,17 @@ import img3 from "../assets/images/ximage_1.jpg.pagespeed.ic.2BInOJMs0v.jpg";
 
 function PricingComps() {
   return (
-    <section className=" bg-[#F4F5F9] h-[130vh]   flex justify-center items-center">
+    <section className=" bg-[#F4F5F9] h-[130vh]   flex justify-center items-center phoneL:h-auto phoneL:py-8">
       <div className="prices_content flex flex-col gap-8">
         <header className="text-center ">
-          <h2 className="font-semibold text-webpurple leading-[23px] text-[14px] uppercase">
+          <h2 className="font-semibold text-webpurple leading-[23px] text-[14px] uppercase phoneP:text-[12px]">
             Pricing
           </h2>
-          <h1 className="font-bold leading-[48px]  text-[34px] tracking-[3px] uppercase">
+          <h1 className="font-bold leading-[48px]  text-[34px] tracking-[3px] uppercase tablet:text-[28px] tablet:tracking-[2px] tablet:leading-[35px] phoneL:text-[24px] phoneL:leading-[30px] phoneP:text-[20px] phoneP:leading-[25px]">
             Price & Plans
           </h1>
         </header>
-        <div className="price_list flex gap-8 justify-center">
+        <div className="price_list flex gap-8 justify-center  laptop:gap-2 phoneL:flex-col phoneL:gap-8 phoneL:items-center">
           <Prices img={img1} number={"78"} currentindex={0} />
           <Prices img={img2} number={"88"} currentindex={1} />
           <Prices img={img3} number={"98"} currentindex={2} />
