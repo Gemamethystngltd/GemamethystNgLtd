@@ -19,6 +19,9 @@ function PorfoliopagesSections() {
   useEffect(() => {
     updateItemsPerPage();
     window.addEventListener("resize", updateItemsPerPage);
+    return () => {
+      window.removeEventListener("resize", updateItemsPerPage);
+    };
   }, []);
 
   const pageCount = Math.ceil(totalItems / pageItems);

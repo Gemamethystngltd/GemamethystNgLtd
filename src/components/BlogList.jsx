@@ -1,90 +1,92 @@
-import BlogPost from "./Home/BlogPost";
+import BlogPost from "./BlogPost2";
 import ReactPaginate from "react-paginate";
-import { blogspostlong } from "../constants";
-import { useState } from "react";
-function BlogList() {
-  const [currentindex, setsurrentindex] = useState(0); // Pagination index
-  const [searchQuery, setsearchQuery] = useState(""); // Search query
-  const [filteredBlog, setfilteredBlog] = useState(blogspostlong); // Filtered blog posts
-  // Handle search input changes
-  const handlesearch = (e) => {
-    const query = e.target.value.toLowerCase();
-    setsearchQuery(query);
-
-    if (query.trim() === "") {
-      setfilteredBlog(blogspostlong); // Reset when empty
+import { useEffect, useState } from "react";
+import Search from "./search";
+function BlogList({
+  filteredBlog,
+  handlesearch,
+  setfilteredBlog,
+  searchQuery,
+  setsearchQuery,
+  blogspostlong,
+  currentindex,
+  setsurrentindex,
+}) {
+  const [page, setPage] = useState(4);
+  const [searchdisplay, setsearchdisplay] = useState(false);
+  const handleScreen = () => {
+    if (window.innerWidth < 400) {
+      setPage(2);
+      setsearchdisplay(true);
     } else {
-      const result = blogspostlong
-        .filter((blog) => blog.title.toLowerCase().includes(query))
-        .sort((a, b) => {
-          const titleA = a.title.toLowerCase();
-          const titleB = b.title.toLowerCase();
-
-          // Prioritize titles that start with the query
-          const startsWithA = titleA.startsWith(query) ? -1 : 0;
-          const startsWithB = titleB.startsWith(query) ? -1 : 0;
-
-          return startsWithA - startsWithB; // Sort accordingly
-        });
-
-      setfilteredBlog(result);
+      setPage(4);
+      setsearchdisplay(false);
     }
-
-    setsurrentindex(0); // Reset pagination index
   };
+
+  useEffect(() => {
+    handleScreen();
+    window.addEventListener("resize", handleScreen);
+    return () => {
+      window.removeEventListener("resize", handleScreen);
+    };
+  }, []);
   // Pagination settings
-  const pagesize = 4;
+
   const totoalItem = filteredBlog.length;
-  const pageCount = Math.ceil(totoalItem / pagesize);
+  const pageCount = Math.ceil(totoalItem / page);
   // Handle page clicks
   const handlePageClick = (data) => {
     setsurrentindex(data.selected);
   };
-  const startIndex = currentindex * pagesize;
-  const endIndex = startIndex + pagesize;
+  const startIndex = currentindex * page;
+  const endIndex = startIndex + page;
   const currentitems = filteredBlog.slice(startIndex, endIndex);
 
   return (
     <section className="">
-      <div className="seach border-1 border m-4 border-black overflow-hidden rounded-md shadow-sm ">
-        <input
-          type="text"
-          className="p-3 w-full"
-          name="search"
-          value={searchQuery}
-          onChange={handlesearch}
-          placeholder="Search..."
-        />
-      </div>
-      <div className="grid grid-cols-2 gap-8  w-fit   ">
+      {searchdisplay && (
+        <div className="pb-3">
+          <Search searchQuery={searchQuery} handlesearch={handlesearch} />
+        </div>
+      )}
+      <div className="grid grid-cols-2 gap-8  w-fit phoneL:gap-1 phoneP:grid-cols-1 place-items-center   ">
         {currentitems.map((blog, index) => {
           return (
-            <div key={index} className=" flex justify-between ">
-              <BlogPost
-                key={index}
-                title={blog.title}
-                img={blog.img}
-                des={blog.description}
-              />
-            </div>
+            <BlogPost
+              key={index}
+              title={blog.title}
+              img={blog.img}
+              des={blog.description}
+            />
           );
         })}
       </div>
       <div className="text-center w-full">
         <ReactPaginate
-          previousLabel={"previous"}
+          previousLabel={"prev"}
           nextLabel={"next"}
-          breakLabel={"..."}
+          breakLabel={", ..."}
           pageCount={pageCount}
-          marginPagesDisplayed={2}
-          pageRangeDisplayed={5}
+          marginPagesDisplayed={1}
+          pageRangeDisplayed={1}
           onPageChange={handlePageClick}
-          containerClassName="flex justify-center space-x-2 mt-6"
-          pageClassName="px-4 py-2 border border-gray-300 rounded-md cursor-pointer hover:bg-gray-200"
-          activeClassName={"bg-webpurple text-white border-blue-600"}
-          previousClassName="px-4 py-2 border border-gray-300 rounded-md cursor-pointer hover:bg-gray-200"
-          nextClassName="px-4 py-2 border border-gray-300 rounded-md cursor-pointer hover:bg-gray-200"
-          breakClassName="px-4 py-2 border border-gray-300 rounded-md cursor-pointer"
+          containerClassName="flex justify-center space-x-2 mt-6 
+                      phoneL:space-x-1 phoneL:text-sm 
+                      phoneP:flex-wrap phoneP:gap-2 phoneP:text-xs"
+          pageClassName="px-4 py-2 border border-gray-300 rounded-md cursor-pointer hover:bg-gray-200 
+                 phoneL:px-3 phoneL:py-1 
+                 phoneP:px-2 phoneP:py-1"
+          activeClassName="bg-webpurple text-white border-blue-600"
+          previousClassName="px-4 py-2 border border-gray-300 rounded-md cursor-pointer hover:bg-gray-200
+                     phoneL:px-3 phoneL:py-1
+                     phoneP:px-2 phoneP:py-1"
+          nextClassName="px-4 py-2 border border-gray-300 rounded-md cursor-pointer hover:bg-gray-200
+                 phoneL:px-3 phoneL:py-1
+                 phoneP:px-2 phoneP:py-1"
+          breakClassName="px-4 py-2 border border-gray-300 rounded-md cursor-pointer
+                  phoneL:px-3 phoneL:py-1 
+                  phoneP:px-2 phoneP:py-1"
           disabledClassName="opacity-50 cursor-not-allowed"
         />
       </div>

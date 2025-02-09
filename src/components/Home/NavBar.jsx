@@ -5,7 +5,7 @@ function NavBar() {
       <div className="logo_container ">
         <Link to="/">
           {" "}
-          <h1 className="text-[24px] leading-[28px] text-white font-bold">
+          <h1 className="text-[24px] leading-[28px] text-white font-bold ">
             <span className="text-webpurple">Gem</span>amethystng
           </h1>
         </Link>

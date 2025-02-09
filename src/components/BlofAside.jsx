@@ -2,7 +2,25 @@ import blog1 from "../assets/images/ximage_5.jpg.pagespeed.ic.xRa-Yrd6zy.jpg";
 import blog2 from "../assets/images/ximage_4.jpg.pagespeed.ic.9VUxuBaVRa.jpg";
 import blog3 from "../assets/images/ximage_3.jpg.pagespeed.ic.CzImA-z_Ch.jpg";
 import Recentblogs from "./recentblogs";
-function BlofAside() {
+import { useEffect, useState } from "react";
+import Search from "./search";
+function BlofAside({ searchQuery, handlesearch }) {
+  const [searcdisplay, setsearcdisplay] = useState(false);
+  const handleScreen = () => {
+    if (window.innerWidth > 500) {
+      setsearcdisplay(true);
+    } else {
+      setsearcdisplay(false);
+    }
+  };
+
+  useEffect(() => {
+    handleScreen();
+    window.addEventListener("resize", handleScreen);
+    return () => {
+      window.removeEventListener("resize", handleScreen);
+    };
+  }, []);
   const blogData = [
     {
       title: "Marketing Strategies for Digital Ecosystem",
@@ -18,12 +36,13 @@ function BlofAside() {
     },
   ];
   return (
-    <section className=" w-[30%] p-4 flex flex-col gap-[5rem]">
-      <div className="seach border-1 border border-black overflow-hidden rounded-md shadow-sm ">
-        <input type="text" className="p-3 w-full" placeholder="Search..." />
-      </div>
-      <div className="recebt_blog">
-        <h1 className="uppercase font-bold leading-[30px] text-[20px]">
+    <section className=" w-[30%] p-4 flex flex-col gap-[4rem] tablet:p-2 tablet:gap-8 phoneL:w-full ">
+      {searcdisplay && (
+        <Search searchQuery={searchQuery} handlesearch={handlesearch} />
+      )}
+
+      <div className="recebt_blog flex flex-col gap-4">
+        <h1 className="uppercase font-bold leading-[30px] text-[20px] laptop:text-[17px] laptop:leading-[25px] tablet:text-[15px]">
           recent blog
         </h1>
         <div className="blogs flex flex-col gap-3">
@@ -34,24 +53,24 @@ function BlofAside() {
           })}
         </div>
       </div>
-      <div className="categories_tag flex w-[60%] gap-4 flex-col">
-        <h1 className="font-bold  leading-[30px] text-[20px] uppercase">
+      <div className="categories_tag flex w-[60%] gap-4 flex-col laptop:w-[90%] laptop:gap-3 phoneP:w-[100%]">
+        <h1 className="font-bold  leading-[30px] text-[20px] uppercase laptop:text-[17px] laptop:leading-[25px] tablet:text-[15px]">
           tag cloud
         </h1>
         <div className="flex gap-[.3rem]  flex-wrap">
-          <h2 className="uppercase leading-[20px] text-[11px] font-bold py-1 px-2 border-1 border border-[#E5E5E5] rounded-md">
+          <h2 className="uppercase leading-[20px] text-[11px] font-bold py-1 px-2 border-1 border border-[#E5E5E5] rounded-md laptop:text-[10px]  laptop:font-semibold">
             design
           </h2>
-          <h2 className="uppercase leading-[20px] text-[11px] font-bold py-1 px-2 border-1 border border-[#E5E5E5] rounded-md">
+          <h2 className="uppercase leading-[20px] text-[11px] font-bold py-1 px-2 border-1 border border-[#E5E5E5] rounded-md laptop:text-[10px]  laptop:font-semibold">
             learn
           </h2>
-          <h2 className="uppercase leading-[20px] text-[11px] font-bold py-1 px-2 border-1 border border-[#E5E5E5] rounded-md">
+          <h2 className="uppercase leading-[20px] text-[11px] font-bold py-1 px-2 border-1 border border-[#E5E5E5] rounded-md laptop:text-[10px]  laptop:font-semibold">
             bag
           </h2>
-          <h2 className="uppercase leading-[20px] text-[11px] font-bold py-1 px-2 border-1 border border-[#E5E5E5] rounded-md">
+          <h2 className="uppercase leading-[20px] text-[11px] font-bold py-1 px-2 border-1 border border-[#E5E5E5] rounded-md laptop:text-[10px]  laptop:font-semibold">
             pen
           </h2>
-          <h2 className="uppercase leading-[20px] text-[11px] font-bold py-1 px-2 border-1 border border-[#E5E5E5] rounded-md">
+          <h2 className="uppercase leading-[20px] text-[11px] font-bold py-1 px-2 border-1 border border-[#E5E5E5] rounded-md laptop:text-[10px]  laptop:font-semibold">
             education
           </h2>
           <h2 className="uppercase leading-[20px] text-[11px] font-bold py-1 px-2 border-1 border border-[#E5E5E5] rounded-md">
@@ -62,11 +81,11 @@ function BlofAside() {
           </h2>
         </div>
       </div>
-      <div className="paragrahn flex flex-col gap-4">
-        <h1 className="font-bold text-[20px] leading-[30px] uppercase ">
+      <div className="paragrahn flex flex-col gap-4 tablet:gap-2">
+        <h1 className="font-bold text-[20px] leading-[30px] uppercase  laptop:text-[17px] laptop:leading-[25px] tablet:text-[15px]">
           Paragraph
         </h1>
-        <p className="text-[15px] leading-[27px] font-normal text-[#9D9D9D]">
+        <p className="text-[15px] leading-[27px] font-normal text-[#9D9D9D] laptop:text-[13px] laptop:leading-[19.5px] tablet:text-[11px] tablet:leading-[15px]">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
           itaque, autem necessitatibus voluptate quod mollitia delectus aut,
           sunt placeat nam vero culpa sapiente consectetur similique, inventore
