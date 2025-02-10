@@ -325,3 +325,27 @@ export const porfoliolong = [
     bgImage: bg6,
   },
 ];
+
+// contact page data
+export const contacData = [
+  {
+    icon: "fa-solid fa-location-dot",
+    title: "Address",
+    description: "Omu-Aran",
+  },
+  {
+    icon: "fa-solid fa-phone",
+    title: "Phone",
+    description: "+234 815 9531 614",
+  },
+  {
+    icon: "fa-solid fa-envelope",
+    title: "Email",
+    description: "amethystngltd@gmail.com",
+  },
+  {
+    icon: "fa-solid fa-earth-americas",
+    title: "Website",
+    description: "Omu-Aran",
+  },
+];

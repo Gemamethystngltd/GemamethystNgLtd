@@ -2,8 +2,16 @@ import file from "../../assets/icons/documents.png";
 import waiter from "../../assets/icons/waiter.png";
 import service from "../../assets/icons/customer-service.png";
 import satisfaction from "../../assets/icons/customer-satisfaction.png";
+import Aos from "aos";
+import { useEffect } from "react";
 
 const Overlay = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      offset: 100,
+    });
+  }, []);
   const data = [
     {
       num: 2,
@@ -33,7 +41,11 @@ const Overlay = () => {
         <div className="overlay_conatent flex gap-[4rem] z-10  laptop:gap-[2rem] tablet:gap-4 phoneL:flex-col ">
           {data.map((item, index) => {
             return (
-              <div key={index} className="overlay_box flex gap-3 ">
+              <div
+                key={index}
+                className="overlay_box flex gap-3 "
+                data-aos="fade-up"
+              >
                 <div className="box_img_container p-2 w-[5rem] text-center bg-webpurple laptop:w-[4rem]  laptop:h-[4rem] tablet:w-[3.5rem] tablet:h-[3.5rem] phoneP:w-[3rem] phoneP:h-[3rem] ">
                   <img src={item.img} />
                 </div>

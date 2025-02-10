@@ -1,10 +1,23 @@
+import { useEffect } from "react";
+import Aos from "aos";
 const SolutionBox = ({ text, icon }) => {
+  useEffect(() => {
+    Aos.init({
+      duration: 1500,
+      offset: 100,
+    });
+  }, []);
   return (
-    <div className="Solutions_box w-[250px] h-[240px] box pt-6 px-4 flex  flex-col bg-vantablack gap-6 rounded-lg   laptop:w-[200px] laptop:h-[200px] tablet:w-[150px] tablet:h-[150px] phoneL:w-[180px] phoneL:h-[180px] phoneP:w-[130px] phoneP:h-[130px] ">
+    <div
+      data-aos="fade-up-right"
+      className="Solutions_box w-[250px] h-[240px] box pt-6 px-4 flex   flex-col bg-vantablack gap-6 rounded-lg   laptop:w-[200px] laptop:h-[200px] tablet:w-[150px] tablet:h-[150px] phoneL:w-[180px] phoneL:h-[180px] phoneP:w-[130px] phoneP:h-[130px] "
+    >
       <div className="box_header flex justify-end pr-4 phoneP:pr-2">
         {/* <i className={`${icon} text-[4.5rem]   text-webpurple`}></i> */}
         <img
           src={icon}
+          data-aos="zoom-in"
+          data-aos-delay="600"
           alt="icon"
           className="w-[5rem] h-[4.8rem] laptop:h-[4rem] laptop:w-[4rem] tablet:w-[3rem] tablet:h-[3rem] phoneL:w-[3.4rem] phoneL:h-[3.4rem] phoneP:w-[2.3rem] phoneP:h-[2.3rem]"
         />
