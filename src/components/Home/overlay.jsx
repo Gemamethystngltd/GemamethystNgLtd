@@ -36,7 +36,7 @@ const Overlay = () => {
   ];
   return (
     <>
-      <section className="overlay relative h-[40vh] mb-[20vh] flex justify-center items-center tablet:h-[30vh] phoneL:h-auto  phoneL:justify-start phoneL:p-8">
+      <section className="overlay relative h-[40vh] mb-[20vh] flex justify-center items-center tablet:h-[30vh] tablet:mb-[8vh] phoneL:h-auto  phoneL:justify-start phoneL:p-8">
         <div className="black_screen absolute inset-0 bg-black bg-opacity-70"></div>
         <div className="overlay_conatent flex gap-[4rem] z-10  laptop:gap-[2rem] tablet:gap-4 phoneL:flex-col ">
           {data.map((item, index) => {

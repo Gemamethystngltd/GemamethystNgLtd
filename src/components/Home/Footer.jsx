@@ -1,4 +1,12 @@
+import Aos from "aos";
+import { useEffect } from "react";
 function Footer() {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      offset: 100,
+    });
+  }, []);
   const exploreData = [
     { explore: "About", info: "Join us", company: "About us" },
     { explore: " Contact", info: "Blog", company: "Blog" },
@@ -18,10 +26,25 @@ function Footer() {
               countries,steady on the internet thats where our heart lies.
             </p>
             <div className="social_media flex gap-3 tablet:items-center ">
-              <i className="fa-brands fa-linkedin-in text-white bg-webpurple p-3 rounded-full text-[14px] tablet:p-[.6rem] tablet:text-[12px] phoneP:p-[.5rem] phoneP:text-[11px]"></i>
-              <i className="fa-brands fa-tiktok  text-white bg-webpurple p-3 rounded-full text-[14px] tablet:p-[.6rem] tablet:text-[12px] phoneP:p-[.5rem] phoneP:text-[11px]"></i>
-              <i className="fa-brands fa-facebook-f  text-white bg-webpurple p-3 rounded-full text-[14px] tablet:p-[.6rem] tablet:text-[12px] phoneP:p-[.5rem] phoneP:text-[11px]"></i>
-              <i className="fa-brands fa-twitter  text-white bg-webpurple p-3 rounded-full text-[14px] tablet:p-[.6rem] tablet:text-[12px] phoneP:p-[.5rem] phoneP:text-[11px]"></i>
+              <i
+                data-aos="fade-up"
+                className="fa-brands fa-linkedin-in text-white bg-webpurple p-3 rounded-full text-[14px] tablet:p-[.6rem] tablet:text-[12px] phoneP:p-[.5rem] phoneP:text-[11px]"
+              ></i>
+              <i
+                data-aos="fade-up"
+                data-aos-delay="100"
+                className="fa-brands fa-tiktok  text-white bg-webpurple p-3 rounded-full text-[14px] tablet:p-[.6rem] tablet:text-[12px] phoneP:p-[.5rem] phoneP:text-[11px]"
+              ></i>
+              <i
+                data-aos="fade-up"
+                data-aos-delay="200"
+                className="fa-brands fa-facebook-f  text-white bg-webpurple p-3 rounded-full text-[14px] tablet:p-[.6rem] tablet:text-[12px] phoneP:p-[.5rem] phoneP:text-[11px]"
+              ></i>
+              <i
+                data-aos="fade-up"
+                data-aos-delay="300"
+                className="fa-brands fa-twitter  text-white bg-webpurple p-3 rounded-full text-[14px] tablet:p-[.6rem] tablet:text-[12px] phoneP:p-[.5rem] phoneP:text-[11px]"
+              ></i>
             </div>
           </div>
         </div>

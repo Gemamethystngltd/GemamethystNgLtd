@@ -1,8 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import img2 from "../../assets/images/xabout-2.jpg.pagespeed.ic.GABFWe5WUO.jpg";
 import { faqs } from "../../constants";
+import Aos from "aos";
 
 function Faq() {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      offset: 100,
+    });
+  }, []);
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
@@ -13,7 +20,10 @@ function Faq() {
       <section className="flex bg-[#f4f5f9]  tablet:flex-col-reverse ">
         <div className="faq_text_container flex flex-col  justify-center p-4 w-1/2  tablet:w-full  phoneL:p-2">
           <div className="fa_text_content w-[70%]  self-end mt-16 laptop:w-[100%] laptop:mt-10 ">
-            <header className="faq_header flex flex-col gap-8 laptop:gap-4 tablet:gap-2 ">
+            <header
+              data-aos="fade-up"
+              className="faq_header flex flex-col gap-8 laptop:gap-4 tablet:gap-2 "
+            >
               <h2 className=" font-semibold leading-[23px] text-[13px] text-webpurple uppercase laptop:text-[11px] laptop:leading-[21px] laptop:tracking-[2px] phoneL:text-[10px] phoneL:tracking-[1px] phoneP:text-[10px] phoneP:tracking-[1px]">
                 Frequently Asked Questions
               </h2>
@@ -27,6 +37,7 @@ function Faq() {
               {faqs.map((faq, index) => (
                 <div key={index} className="faq_container_box w-full  h-auto ">
                   <button
+                    data-aos="fade-up"
                     className={`fa_btn w-[100%]  border border-1 shadow-md text-left py-5 px-4 laptop:py-4 laptop:px-3 tablet:py-2 tablet:p2  ${
                       activeIndex === index ? "bg-webpurple" : "bg-[#ffff]"
                     } `}
@@ -86,16 +97,27 @@ function Faq() {
         <div className="faq_img_container p-8 w-1/2 tablet:w-full phoneL:p-2">
           <div className="faq_img_content w-[70%] flex flex-col gap-10 laptop:w-full ">
             <hewader>
-              <img src={img2} alt="img" className="object-cover" />
+              <img
+                data-aos="zoom-in"
+                src={img2}
+                alt="img"
+                className="object-cover"
+              />
             </hewader>
             <div className="faq_img_text flex flex-col gap-16 laptop:gap-10 phoneL:gap-6">
-              <h1 className="text-[32px] leading-[48px] font-bold text-[black] uppercase tracking-[1px] laptop:text-[28px] laptop:leading-[38px] laptop:tracking-[2px] tablet:text-[20px] tablet:leading-[30px] phoneL:text-[18px] phoneL:leading-[25px] phoneP:text-[16px] phoneP:leading-[20px]">
+              <h1
+                data-aos="fade-up"
+                className="text-[32px] leading-[48px] font-bold text-[black] uppercase tracking-[1px] laptop:text-[28px] laptop:leading-[38px] laptop:tracking-[2px] tablet:text-[20px] tablet:leading-[30px] phoneL:text-[18px] phoneL:leading-[25px] phoneP:text-[16px] phoneP:leading-[20px]"
+              >
                 We Are Very <br />
                 Experienced & Professionals
               </h1>
               <div className="faq_progress flex flex-col gap-8 phoneL:gap-4">
                 {/* individual sections */}
-                <div className="faq_progress_bar_container flex  flex-col gap-2 w-full">
+                <div
+                  data-aos="fade-down"
+                  className="faq_progress_bar_container flex  flex-col gap-2 w-full"
+                >
                   <div className="faq_progress_bar_header flex justify-between ">
                     <h2 className="font-bold uppercase text-[14px] leading-[21px] phoneL:text-[12px] ">
                       Creative Design
@@ -110,7 +132,10 @@ function Faq() {
                     max="100"
                   ></progress>
                 </div>
-                <div className="faq_progress_bar_container flex  flex-col gap-2 w-full">
+                <div
+                  data-aos="fade-down"
+                  className="faq_progress_bar_container flex  flex-col gap-2 w-full"
+                >
                   <div className="faq_progress_bar_header flex justify-between ">
                     <h2 className="font-bold uppercase text-[14px] leading-[21px] phoneL:text-[12px]">
                       Product Engineering
@@ -125,7 +150,11 @@ function Faq() {
                     max="100"
                   ></progress>
                 </div>
-                <div className="faq_progress_bar_container flex  flex-col gap-2 w-full">
+
+                <div
+                  data-aos="fade-down"
+                  className="faq_progress_bar_container flex  flex-col gap-2 w-full"
+                >
                   <div className="faq_progress_bar_header flex justify-between ">
                     <h2 className="font-bold uppercase text-[14px] leading-[21px] phoneL:text-[12px] ">
                       Marketing Strategy
@@ -141,7 +170,10 @@ function Faq() {
                   ></progress>
                 </div>
 
-                <div className="faq_progress_bar_container flex  flex-col gap-2 w-full">
+                <div
+                  data-aos="fade-down"
+                  className="faq_progress_bar_container flex  flex-col gap-2 w-full"
+                >
                   <div className="faq_progress_bar_header flex justify-between ">
                     <h2 className="font-bold uppercase text-[14px] leading-[21px] phoneL:text-[12px] ">
                       Support Tips

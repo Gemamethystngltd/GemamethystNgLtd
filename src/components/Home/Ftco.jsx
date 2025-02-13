@@ -10,12 +10,13 @@ function Ftco() {
       offset: 100,
     });
   }, []);
+
   return (
     <>
-      <section className="ftco_section flex relative laptop:h-[105vh]  phoneL:flex-col phoneL:w-full phoneL:h-auto ">
+      <section className="ftco_section flex relative laptop:h-[105vh] tablet:h-auto  phoneL:flex-col phoneL:w-full phoneL:h-auto ">
         <div className="img_container flex  w-[50%] phoneL:w-[100%] phoneL:mb-4 phoneL:h-[50vh] ">
           <img
-            className="w-1/2 ml-auto mr-[4rem] h-full laptop:w-full laptop:mr-1 laptop:m-0 phoneL:h-[100%] object-cover  phoneL:m-0 phoneL:ml-0"
+            className="w-1/2 ml-auto mr-[4rem] h-full laptop:w-full laptop:mr-1 laptop:m-0  tablet:my-auto phoneL:h-[100%] object-cover  phoneL:m-0 phoneL:ml-0"
             src={img1}
             alt="about"
           />

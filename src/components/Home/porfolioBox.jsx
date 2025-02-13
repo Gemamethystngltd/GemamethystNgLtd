@@ -1,6 +1,7 @@
 const Porfoliobox = ({ bgImage, tiitle, description }) => {
   return (
     <div
+      data-aos="fade-up"
       style={{
         background: `url(${bgImage}) `,
       }}

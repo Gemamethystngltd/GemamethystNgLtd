@@ -2,7 +2,10 @@ import TestimonialsCarousel from "./TestimonialsCarousel";
 const Testimonails = () => {
   return (
     <section className="testimonail_section mt-[10rem] flex flex-col gap-9 laptop:gap-6 phoneL:mt-[5rem] phoneP:gap-4">
-      <header className="team_header  flex justify-between items-center w-[70%] mx-auto   laptop:w-[80%] phoneL:w-[90%]  phoneP:w-[95%]  ">
+      <header
+        data-aos="fade-up"
+        className="team_header  flex justify-between items-center w-[70%] mx-auto   laptop:w-[80%] phoneL:w-[90%]  phoneP:w-[95%]  "
+      >
         <div className="header_team_text flex flex-col gap-2 m:gap-1">
           <h3 className=" text-[13px] text-webpurple leading-[23px] uppercase font-semibold laptop:text-[11px] ">
             {" "}
@@ -16,7 +19,7 @@ const Testimonails = () => {
         </div>
       </header>
 
-      <div className=" overflow-hidden h-[35vh]  ">
+      <div className=" overflow-hidden h-[35vh]   ">
         <TestimonialsCarousel />
       </div>
     </section>

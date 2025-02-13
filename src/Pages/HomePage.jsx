@@ -8,8 +8,16 @@ import TeamComponents from "../components/Home/TeamComponents";
 import PorfolioComp from "../components/Home/portfolio";
 import Testimonails from "../components/Home/Testimonials";
 import Blog from "../components/Home/Blog";
+import Aos from "aos";
+import { useEffect } from "react";
 import Footer from "../components/Home/Footer";
 function HomePage() {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      offset: 100,
+    });
+  }, []);
   return (
     <>
       <main className="relative">

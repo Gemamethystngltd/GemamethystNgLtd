@@ -1,6 +1,9 @@
 const Header = ({ text, title, btnText, textColor }) => {
   return (
-    <header className="team_header  flex justify-between items-center w-[70%] mx-auto   laptop:w-[80%] phoneL:w-[90%]  phoneP:w-[95%]  ">
+    <header
+      data-aos="fade-up"
+      className="team_header  flex justify-between items-center w-[70%] mx-auto   laptop:w-[80%] phoneL:w-[90%]  phoneP:w-[95%]  "
+    >
       <div className="header_team_text flex flex-col gap-4 ">
         <h3 className=" text-[13px] text-webpurple leading-[23px] uppercase font-semibold laptop:text-[11px] ">
           {text}

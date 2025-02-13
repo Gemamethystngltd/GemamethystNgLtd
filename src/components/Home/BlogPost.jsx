@@ -1,7 +1,19 @@
 import BlogDetails from "./BlogDetails";
+import Aos from "aos";
+import { useEffect } from "react";
+
 function BlogPost({ title, img, des }) {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      offset: 100,
+    });
+  }, []);
   return (
-    <div className="blog_post  flex flex-col gap-4  overflow-hidden w-[20rem] relative shadow-[0px_4px_24px_-16px_rgba(0,0,0,0.15)] rounded-md laptop:w-[19rem] tablet:w-[15rem] phoneL:w-[78%] phoneP:w-[90%]">
+    <div
+      data-aos="fade-up"
+      className="blog_post  flex flex-col gap-4  overflow-hidden w-[20rem] relative shadow-[0px_4px_24px_-16px_rgba(0,0,0,0.15)] rounded-md laptop:w-[19rem] tablet:w-[15rem] phoneL:w-[78%] phoneP:w-[90%]"
+    >
       <BlogDetails />
       <div className="blog_post_img ">
         <img src={img} alt="blog_post_img" className="w-full" />

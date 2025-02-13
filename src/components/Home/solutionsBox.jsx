@@ -1,12 +1,4 @@
-import { useEffect } from "react";
-import Aos from "aos";
 const SolutionBox = ({ text, icon }) => {
-  useEffect(() => {
-    Aos.init({
-      duration: 1500,
-      offset: 100,
-    });
-  }, []);
   return (
     <div
       data-aos="fade-up-right"
