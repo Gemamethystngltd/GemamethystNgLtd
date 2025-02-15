@@ -1,4 +1,12 @@
-function Prices({ currentindex, img, number }) {
+import Aos from "aos";
+import { useEffect } from "react";
+function Prices({ currentindex, img, number, delay }) {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      offset: 100,
+    });
+  }, []);
   const pricedata = [
     [
       "Planning Solution",
@@ -20,9 +28,18 @@ function Prices({ currentindex, img, number }) {
     ],
   ];
   return (
-    <div className="prices w-[23%] shadow-lg rounded-md overflow-hidden laptop:w-[30%] tablet:w-[35%] phoneL:w-[80%] phoneP:w-[85%]">
+    <div
+      data-aos="fade-left"
+      data-aos-delay={delay}
+      className="prices w-[23%] shadow-lg rounded-md overflow-hidden laptop:w-[30%] tablet:w-[35%] phoneL:w-[80%] phoneP:w-[85%]"
+    >
       <header>
-        <img src={img} className="w-full h-full" />
+        <img
+          data-aos="zoom-in"
+          data-aos-delay={delay}
+          src={img}
+          className="w-full h-full"
+        />
       </header>
       <ul className="price_benefits py-8 px-6 flex bg-white flex-col gap-4 laptop:gap-2 laptop:py-7 laptop:px-4 tablet:gap-1 tablet:py-4 tablet:px-3 phoneP:gap-1 phoneP:py-4 phoneP:px-2">
         {pricedata[currentindex].map((price, index) => {

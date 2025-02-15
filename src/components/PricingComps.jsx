@@ -16,9 +16,9 @@ function PricingComps() {
           </h1>
         </header>
         <div className="price_list flex gap-8 justify-center  laptop:gap-2 phoneL:flex-col phoneL:gap-8 phoneL:items-center">
-          <Prices img={img1} number={"78"} currentindex={0} />
-          <Prices img={img2} number={"88"} currentindex={1} />
-          <Prices img={img3} number={"98"} currentindex={2} />
+          <Prices delay="200" img={img1} number={"78"} currentindex={0} />
+          <Prices delay="400" img={img2} number={"88"} currentindex={1} />
+          <Prices delay="600" img={img3} number={"98"} currentindex={2} />
         </div>
       </div>
     </section>

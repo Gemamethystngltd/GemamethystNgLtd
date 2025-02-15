@@ -1,4 +1,5 @@
 import Aos from "aos";
+import { Link } from "react-router-dom";
 import { useEffect } from "react";
 function Footer() {
   useEffect(() => {
@@ -8,10 +9,20 @@ function Footer() {
     });
   }, []);
   const exploreData = [
-    { explore: "About", info: "Join us", company: "About us" },
-    { explore: " Contact", info: "Blog", company: "Blog" },
-    { explore: " Porfolio", info: "Privacy & Policy", company: "Contact" },
-    { explore: "  Blog", info: "Term & Conditions", company: "Careers" },
+    { explore: "About", info: "Join us", company: "About us", link: "/about" },
+    { explore: " Contact", info: "Blog", company: "Blog", link: "/contact" },
+    {
+      explore: " Porfolio",
+      info: "Privacy & Policy",
+      company: "Contact",
+      link: "/portfolio",
+    },
+    {
+      explore: "  Blog",
+      info: "Term & Conditions",
+      company: "Careers",
+      link: "/blog",
+    },
   ];
   return (
     <footer className=" h-[70vh] flex bg-[#232429]  justify-center  items-center tablet:px-4 phoneP:px-2">
@@ -59,15 +70,18 @@ function Footer() {
             <ul className="laptop:flex laptop:flex-col laptop:gap-1 ">
               {exploreData.map((item, index) => {
                 return (
-                  <li
+                  <Link
                     key={index}
-                    className="text-[#BCBCBE] text-[16px] font-normal leading-[29px] laptop:text-[14px] laptop:leading-[20px] tablet:text-[12px] tablet:leading-[15px] phoneL:text-[10px] phoneL:leading-[12px] phoneP:text-[9px] phoneP:leading-[10px]"
+                    to={item.link}
+                    onClick={window.scrollTo({ top: 0, behavior: "smooth" })}
                   >
-                    <span>
-                      <i className="fa-solid fa-angle-right pr-1 phoneP:pr-0"></i>
-                    </span>
-                    {item.explore}
-                  </li>
+                    <li className="text-[#BCBCBE] text-[16px] font-normal leading-[29px] laptop:text-[14px] laptop:leading-[20px] tablet:text-[12px] tablet:leading-[15px] phoneL:text-[10px] phoneL:leading-[12px] phoneP:text-[9px] phoneP:leading-[10px]">
+                      <span>
+                        <i className="fa-solid fa-angle-right pr-1 phoneP:pr-0"></i>
+                      </span>
+                      {item.explore}
+                    </li>
+                  </Link>
                 );
               })}
             </ul>
