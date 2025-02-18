@@ -1,4 +1,5 @@
-const Header = ({ text, title, btnText, textColor }) => {
+import { Link } from "react-router-dom";
+const Header = ({ text, title, btnText, textColor, linkto }) => {
   return (
     <header
       data-aos="fade-up"
@@ -15,9 +16,11 @@ const Header = ({ text, title, btnText, textColor }) => {
         </h1>
       </div>
       <div className="team_btn">
-        <button className=" border-2  border-webpurple p-2 text-webpurple text-[12px] leading-[22px] font-bold uppercase laptop:text-[10px] laptop:p-1 phoneL:text-[8px] ">
-          {btnText}
-        </button>
+        <Link to={linkto}>
+          <button className=" border-2  border-webpurple p-2 text-webpurple text-[12px] leading-[22px] font-bold uppercase laptop:text-[10px] laptop:p-1 phoneL:text-[8px] ">
+            {btnText}
+          </button>
+        </Link>
       </div>
     </header>
   );

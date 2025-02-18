@@ -94,15 +94,14 @@ function Footer() {
             <ul className="laptop:flex laptop:flex-col laptop:gap-1  ">
               {exploreData.map((item, index) => {
                 return (
-                  <li
-                    key={index}
-                    className="text-[#BCBCBE] text-[16px] font-normal leading-[29px] laptop:text-[14px] laptop:leading-[20px] tablet:text-[12px] tablet:leading-[15px] phoneL:text-[10px] phoneL:leading-[12px] phoneP:text-[9px] phoneP:leading-[10px] phoneP:w-"
-                  >
-                    <span>
-                      <i className="fa-solid fa-angle-right pr-1"></i>
-                    </span>
-                    {item.info}
-                  </li>
+                  <Link key={index} to={item.link}>
+                    <li className="text-[#BCBCBE] text-[16px] font-normal leading-[29px] laptop:text-[14px] laptop:leading-[20px] tablet:text-[12px] tablet:leading-[15px] phoneL:text-[10px] phoneL:leading-[12px] phoneP:text-[9px] phoneP:leading-[10px] phoneP:w-">
+                      <span>
+                        <i className="fa-solid fa-angle-right pr-1"></i>
+                      </span>
+                      {item.info}
+                    </li>
+                  </Link>
                 );
               })}
             </ul>
@@ -115,15 +114,14 @@ function Footer() {
             <ul className="laptop:flex laptop:flex-col laptop:gap-1 ">
               {exploreData.map((item, index) => {
                 return (
-                  <li
-                    key={index}
-                    className="text-[#BCBCBE] text-[16px] font-normal leading-[29px] laptop:text-[14px] laptop:leading-[20px] tablet:text-[12px] tablet:leading-[15px] phoneL:text-[10px] phoneL:leading-[12px] phoneP:text-[9px] phoneP:leading-[10px] "
-                  >
-                    <span>
-                      <i className="fa-solid fa-angle-right pr-1"></i>
-                    </span>
-                    {item.company}
-                  </li>
+                  <Link key={index} to={item.link}>
+                    <li className="text-[#BCBCBE] text-[16px] font-normal leading-[29px] laptop:text-[14px] laptop:leading-[20px] tablet:text-[12px] tablet:leading-[15px] phoneL:text-[10px] phoneL:leading-[12px] phoneP:text-[9px] phoneP:leading-[10px] ">
+                      <span>
+                        <i className="fa-solid fa-angle-right pr-1"></i>
+                      </span>
+                      {item.company}
+                    </li>
+                  </Link>
                 );
               })}
             </ul>
