@@ -110,7 +110,7 @@ function Faq() {
                 className="text-[32px] leading-[48px] font-bold text-[black] uppercase tracking-[1px] laptop:text-[28px] laptop:leading-[38px] laptop:tracking-[2px] tablet:text-[20px] tablet:leading-[30px] phoneL:text-[18px] phoneL:leading-[25px] phoneP:text-[16px] phoneP:leading-[20px]"
               >
                 We Are Very <br />
-                Experienced & Professionals
+                Experienced Professionals
               </h1>
               <div className="faq_progress flex flex-col gap-8 phoneL:gap-4">
                 {/* individual sections */}

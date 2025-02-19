@@ -7,6 +7,7 @@ import PorfolioPage from "./Pages/PorfolioPage";
 import BlogPage from "./Pages/BlogPage";
 import TeamMembers from "./Pages/TeamMembers";
 import ContactPage from "./Pages/ContactPage";
+import AllTeamMembers from "./Pages/AllTeamMembers";
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
         <Route path="/portfolio" element={<PorfolioPage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/team" element={<TeamMembers />} />
+        <Route path="/teammembers" element={<AllTeamMembers />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </>

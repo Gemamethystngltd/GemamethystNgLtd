@@ -16,7 +16,7 @@ const Header = ({ text, title, btnText, textColor, linkto }) => {
         </h1>
       </div>
       <div className="team_btn">
-        <Link to={linkto}>
+        <Link to="/teammembers">
           <button className=" border-2  border-webpurple p-2 text-webpurple text-[12px] leading-[22px] font-bold uppercase laptop:text-[10px] laptop:p-1 phoneL:text-[8px] ">
             {btnText}
           </button>
