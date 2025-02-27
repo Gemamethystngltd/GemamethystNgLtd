@@ -2,6 +2,8 @@ import file from "../../assets/icons/documents.png";
 import waiter from "../../assets/icons/waiter.png";
 import service from "../../assets/icons/customer-service.png";
 import satisfaction from "../../assets/icons/customer-satisfaction.png";
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
 import Aos from "aos";
 import { useEffect } from "react";
 
@@ -12,6 +14,10 @@ const Overlay = () => {
       offset: 100,
     });
   }, []);
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
   const data = [
     {
       num: 2,
@@ -50,8 +56,11 @@ const Overlay = () => {
                   <img src={item.img} />
                 </div>
                 <div className="box_text flex flex-col gap-1 laptop:gap-3 tablet:gap-2">
-                  <h2 className="font-bold leading-[58px] text-[32px] text-white laptop:text-[24px] laptop:leading-[24px]  tablet:text-[20px] tablet:leading-[20px] phoneL:text-20px] phoneL:leading-[16px] phoneP:text-[15px] phoneP:leading-[12px] ">
-                    {item.num}
+                  <h2
+                    ref={ref}
+                    className="font-bold leading-[58px] text-[32px] text-white laptop:text-[24px] laptop:leading-[24px]  tablet:text-[20px] tablet:leading-[20px] phoneL:text-20px] phoneL:leading-[16px] phoneP:text-[15px] phoneP:leading-[12px] "
+                  >
+                    {inView ? <CountUp end={item.num} duration={5} /> : 0}
                   </h2>
                   <h3 className="font-semibold leading-[14px] text-[14px] text-white uppercase laptop:w-[50%] laptop:text-[12px] laptop:leading-[12px]  tablet:text-[10px] tablet:leading-[10px] phoneL:text-[10px] phoneL:leading-[11px] phoneP:text-[7px] phoneP:leading-[9px]">
                     {item.text}

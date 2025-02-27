@@ -1,6 +1,8 @@
 import img1 from "../../assets/images/xabout-1.jpg.pagespeed.ic.akjHwrNTaM.jpg";
 import lightBuld from "../../assets/icons/light-bulb.png";
 import Aos from "aos";
+import { useInView } from "react-intersection-observer";
+import CountUp from "react-countup";
 import { useEffect } from "react";
 
 function Ftco() {
@@ -11,6 +13,10 @@ function Ftco() {
     });
   }, []);
 
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
   return (
     <>
       <section className="ftco_section flex relative laptop:h-[105vh] tablet:h-auto  phoneL:flex-col phoneL:w-full phoneL:h-auto ">
@@ -58,8 +64,11 @@ function Ftco() {
               </div>
             </div>
             <div className="ftco_text flex flex-col gap-[.15rem] justify-center">
-              <h2 className="font-bold leading-[32px] text-[30px] text-white  laptop:text-[24px] laptop:leading-[24px] phoneL:text-[20px] phoneL:leading-[20px] phoneP:text-[16px] phoneP:leading-[16px]">
-                3
+              <h2
+                ref={ref}
+                className="font-bold leading-[32px] text-[30px] text-white  laptop:text-[24px] laptop:leading-[24px] phoneL:text-[20px] phoneL:leading-[20px] phoneP:text-[16px] phoneP:leading-[16px]"
+              >
+                {inView ? <CountUp end={3} duration={5} /> : 0}
               </h2>
               <h3 className="text-[10px] leading-[14px] font-bold text-white uppercase laptop:text-[10px] phoneL:text-[8px] phoneP:text-[7px] phoneP:leading-[8px]">
                 Years <br />

@@ -24,6 +24,12 @@ function Footer() {
       link: "/blog",
     },
   ];
+  const socialinks = [
+    "fa-linkedin-in",
+    "fa-tiktok",
+    "fa-facebook-f",
+    "fa-twitter",
+  ];
   return (
     <footer className=" h-[70vh] flex bg-[#232429]  justify-center  items-center tablet:px-4 phoneP:px-2">
       <div className="w-[70%] flex gap-4  justify-between laptop:w-[90%] tablet:w-[100%]  phoneL:flex-col phoneL:gap-6">
@@ -37,25 +43,16 @@ function Footer() {
               countries,steady on the internet thats where our heart lies.
             </p>
             <div className="social_media flex gap-3 tablet:items-center ">
-              <i
-                data-aos="fade-up"
-                className="fa-brands fa-linkedin-in text-white bg-webpurple p-3 rounded-full text-[14px] tablet:p-[.6rem] tablet:text-[12px] phoneP:p-[.5rem] phoneP:text-[11px]"
-              ></i>
-              <i
-                data-aos="fade-up"
-                data-aos-delay="100"
-                className="fa-brands fa-tiktok  text-white bg-webpurple p-3 rounded-full text-[14px] tablet:p-[.6rem] tablet:text-[12px] phoneP:p-[.5rem] phoneP:text-[11px]"
-              ></i>
-              <i
-                data-aos="fade-up"
-                data-aos-delay="200"
-                className="fa-brands fa-facebook-f  text-white bg-webpurple p-3 rounded-full text-[14px] tablet:p-[.6rem] tablet:text-[12px] phoneP:p-[.5rem] phoneP:text-[11px]"
-              ></i>
-              <i
-                data-aos="fade-up"
-                data-aos-delay="300"
-                className="fa-brands fa-twitter  text-white bg-webpurple p-3 rounded-full text-[14px] tablet:p-[.6rem] tablet:text-[12px] phoneP:p-[.5rem] phoneP:text-[11px]"
-              ></i>
+              {socialinks.map((item, index) => {
+                return (
+                  <i
+                    key={index}
+                    data-aos="fade-up"
+                    data-aos-delay={index * 100}
+                    className={`fa-brands ${item} text-white bg-webpurple p-3 rounded-full text-[14px] tablet:p-[.6rem] tablet:text-[12px] phoneP:p-[.5rem] phoneP:text-[11px]`}
+                  ></i>
+                );
+              })}
             </div>
           </div>
         </div>
