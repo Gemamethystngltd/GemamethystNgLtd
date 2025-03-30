@@ -2,7 +2,7 @@ import BlogDetails from "../components/Home/BlogDetails";
 function BlogPost({ title, img, des }) {
   return (
     <div className="blog_post  flex flex-col gap-4  overflow-hidden w-[20rem] relative shadow-[0px_4px_24px_-16px_rgba(0,0,0,0.15)] rounded-md laptop:w-[19rem] tablet:w-[15rem] phoneL:w-[100%] phoneP:w-[90%]">
-      {/* <BlogDetails /> */}
+      <BlogDetails />
       <div className="blog_post_img ">
         <img src={img} alt="blog_post_img" className="w-full" />
       </div>

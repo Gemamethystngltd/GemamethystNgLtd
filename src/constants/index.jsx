@@ -346,6 +346,6 @@ export const contacData = [
   {
     icon: "fa-solid fa-earth-americas",
     title: "Website",
-    description: "Omu-Aran",
+    description: "Comercio Limited",
   },
 ];
