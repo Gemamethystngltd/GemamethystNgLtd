@@ -1,16 +1,21 @@
 import BlogDetails from "./BlogDetails";
+import PropTypes from "prop-types";
+import { useNavigate } from "react-router-dom";
 import Aos from "aos";
 import { useEffect } from "react";
 
-function BlogPost({ title, img, des }) {
+function BlogPost({ title, img, des, roomId }) {
+  const navigate = useNavigate();
   useEffect(() => {
     Aos.init({
       duration: 1000,
       offset: 100,
+      once: true,
     });
   }, []);
   return (
     <div
+      onClick={() => navigate(`/blog/${roomId}`)}
       data-aos="fade-up"
       className="blog_post  flex flex-col gap-4  overflow-hidden w-[20rem] relative shadow-[0px_4px_24px_-16px_rgba(0,0,0,0.15)] rounded-md laptop:w-[19rem] tablet:w-[15rem] phoneL:w-[78%] phoneP:w-[90%]"
     >
@@ -31,5 +36,11 @@ function BlogPost({ title, img, des }) {
     </div>
   );
 }
+
+BlogPost.propTypes = {
+  title: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
+  des: PropTypes.string.isRequired,
+};
 
 export default BlogPost;

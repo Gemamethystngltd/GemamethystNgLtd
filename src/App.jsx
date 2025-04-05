@@ -8,6 +8,7 @@ import BlogPage from "./Pages/BlogPage";
 import TeamMembers from "./Pages/TeamMembers";
 import ContactPage from "./Pages/ContactPage";
 import AllTeamMembers from "./Pages/AllTeamMembers";
+import SpecificBlogPost from "./components/selectedBlog/SpecificBlogPsot";
 function App() {
   return (
     <>
@@ -20,6 +21,7 @@ function App() {
         <Route path="/team" element={<TeamMembers />} />
         <Route path="/teammembers" element={<AllTeamMembers />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/blog/:id" element={<SpecificBlogPost />} />
       </Routes>
     </>
   );

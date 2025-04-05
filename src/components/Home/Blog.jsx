@@ -1,5 +1,5 @@
 import BlogPost from "./BlogPost";
-import { blogspost } from "../../constants";
+import { blogspostlong } from "../../constants";
 import Newsletter from "./Newsletter";
 function Blog() {
   return (
@@ -13,12 +13,13 @@ function Blog() {
         </h1>
       </header>
       <div className="blog_section component flex items-center justify-between w-[75%]  mx-auto  laptop:w-[95%] tablet:w-[96%] phoneL:flex-col phoneL:gap-8">
-        {blogspost.map((blog, index) => {
+        {blogspostlong.slice(0, 3).map((blog, index) => {
           return (
             <BlogPost
               key={index}
               title={blog.title}
               img={blog.img}
+              roomId={blog.id}
               des={blog.description}
             />
           );

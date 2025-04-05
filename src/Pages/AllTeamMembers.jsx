@@ -1,49 +1,53 @@
 import img1 from "../assets/images/CEO.png";
-import img2 from "../assets/images/daniel.jpg";
-import img3 from "../assets/images/ella.jpg";
-import img4 from "../assets/images/bgImg1.png";
-
+import img2 from "../assets/images/amarachi.jpg";
 import { Link } from "react-router-dom";
 
 function AllTeamMembers() {
   const imageList = [
     { img: img1, alt: "Placeholder Image 1" },
-    { img: img1, alt: "Placeholder Image 2" },
-    { img: img1, alt: "Placeholder Image 3" },
-    { img: img4, alt: "Placeholder Image 4" },
-    { img: img1, alt: "Placeholder Image 5" },
-    { img: img1, alt: "Placeholder Image 6" },
-    { img: img1, alt: "Placeholder Image 7" },
-    { img: img1, alt: "Placeholder Image 8" },
+    { img: img2, alt: "Placeholder Image 2" },
   ];
 
   return (
-    <main className=" h-screen flex flex-col items-center">
+    <main className="h-screen bg-gradient-to-b from-[#2a2a2a] to-[#f7f7f7] flex flex-col items-center px-6 py-10">
       <Link to="/">
-        <i className="fa-solid fa-circle-left text-[2rem] fixed top-[1rem] left-[1rem] text-webpurple animate-bounce"></i>
+        <i className="fa-solid fa-circle-left text-[2rem] fixed top-[1rem] left-[1rem] text-white hover:text-webpurple transition-colors"></i>
       </Link>
-      <div className="flex flex-col items-center mt-[2rem]">
-        <h1 className="font-bold text-[30px] leading-[16px]">
+
+      <div className="text-center mt-[3rem] mb-8">
+        <h1
+          className="font-extrabold text-[32px] text-white leading-tight mb-3"
+          data-aos="fade-up"
+        >
           OUR LEADERSHIP TEAM
         </h1>
-        <h2 className="text-[18px] leading-[23px] text-center w-[100%] mt-4">
-          With over 40 years of combined experience, we have got a well-seasoned
-          team at the helm
+        <h2
+          className="text-[18px] text-white opacity-80 w-[85%] mx-auto"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          With over 40 years of combined experience, we have a well-seasoned
+          team at the helm.
         </h2>
       </div>
 
-      <div className="team-members grid grid-cols-4 gap-4 mt-8  p-8">
-        {imageList.map((item, index) => {
-          return (
-            <div key={index} className="team-member outline h-[80%]">
-              <img
-                src={item.img}
-                alt={item.alt}
-                className="object-cover w-full h-full"
-              />
+      <div className="team-members grid place-items-center grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 mt-8 w-full">
+        {imageList.map((item, index) => (
+          <div
+            key={index}
+            className="team-member w-[30rem] h-[30rem] relative overflow-hidden rounded-lg shadow-xl transform hover:scale-110 transition-all duration-500 ease-in-out"
+          >
+            <img
+              src={item.img}
+              alt={item.alt}
+              className="object-cover  w-full h-full transition-transform duration-500 ease-in-out"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-40 hover:opacity-0 transition-opacity duration-300"></div>
+            <div className="absolute bottom-4 left-4 text-white z-10 text-sm font-semibold">
+              {item.alt}
             </div>
-          );
-        })}
+          </div>
+        ))}
       </div>
     </main>
   );

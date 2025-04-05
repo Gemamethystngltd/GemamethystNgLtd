@@ -40,7 +40,7 @@ function NavBar() {
         })}
 
         <button className="btn btn_shop cursor-pointer transition-all hover:scale-110 duration-300 ease-in-out  px-4 rounded-[.4rem] bg-webpurple tracking-[1px] font-medium text-[15px] uppercase  text-white py-2 laptop:text-[13px] tablet:text-[11px] ">
-          AMETHSHOP
+          GEMACADEMY
         </button>
       </ul>
       <div className="hamburger hidden phoneL:block" onClick={toggleNavBar}>

@@ -39,12 +39,9 @@ function MainBlogSection() {
     <div className="flex py-[8rem] gap-[3rem] w-[80%]  mx-auto laptop:w-[90%] laptop:gap-4 tablet:w-full tablet:px-2 tablet:gap-2 phoneL:flex-col phoneL:py-[5rem] phoneL:gap-[3rem] phoneP:py-[4rem] ">
       <BlogList
         filteredBlog={filteredBlog}
-        setfilteredBlog={setfilteredBlog}
         searchQuery={searchQuery}
-        setsearchQuery={setsearchQuery}
         currentindex={currentindex}
         setsurrentindex={setsurrentindex}
-        blogspostlong={blogspostlong}
         handlesearch={handlesearch}
       />
       <BlofAside handlesearch={handlesearch} searchQuery={searchQuery} />

@@ -1,14 +1,12 @@
 import BlogPost from "./BlogPost2";
+import PropTypes from "prop-types";
 import ReactPaginate from "react-paginate";
 import { useEffect, useState } from "react";
 import Search from "./search";
 function BlogList({
   filteredBlog,
   handlesearch,
-  setfilteredBlog,
   searchQuery,
-  setsearchQuery,
-  blogspostlong,
   currentindex,
   setsurrentindex,
 }) {
@@ -54,6 +52,7 @@ function BlogList({
         {currentitems.map((blog, index) => {
           return (
             <BlogPost
+              roomId={blog.id}
               key={index}
               title={blog.title}
               img={blog.img}
@@ -93,5 +92,23 @@ function BlogList({
     </section>
   );
 }
+
+BlogList.propTypes = {
+  filteredBlog: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      img: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+  handlesearch: PropTypes.func.isRequired,
+  setfilteredBlog: PropTypes.func.isRequired,
+  searchQuery: PropTypes.string.isRequired,
+  setsearchQuery: PropTypes.func.isRequired,
+  blogspostlong: PropTypes.array.isRequired,
+  currentindex: PropTypes.number.isRequired,
+  setsurrentindex: PropTypes.func.isRequired,
+};
 
 export default BlogList;

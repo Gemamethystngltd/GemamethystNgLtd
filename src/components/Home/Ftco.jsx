@@ -3,9 +3,24 @@ import lightBuld from "../../assets/icons/light-bulb.png";
 import Aos from "aos";
 import { useInView } from "react-intersection-observer";
 import CountUp from "react-countup";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function Ftco() {
+  const [yearsOfExperience, setYearsOfExperience] = useState(0);
+  useEffect(() => {
+    const startDate = new Date("2023-10-30");
+    const currentDate = new Date();
+    const diffYears = currentDate.getFullYear() - startDate.getFullYear();
+    console.log(diffYears);
+
+    // Check if the current date is before October 30 in the current year
+    const isBeforeAnniversary =
+      currentDate.getMonth() < startDate.getMonth() ||
+      (currentDate.getMonth() === startDate.getMonth() &&
+        currentDate.getDate() < startDate.getDate());
+
+    setYearsOfExperience(isBeforeAnniversary ? diffYears - 1 : diffYears);
+  }, []);
   useEffect(() => {
     Aos.init({
       duration: 1000,
@@ -68,7 +83,7 @@ function Ftco() {
                 ref={ref}
                 className="font-bold leading-[32px] text-[30px] text-white  laptop:text-[24px] laptop:leading-[24px] phoneL:text-[20px] phoneL:leading-[20px] phoneP:text-[16px] phoneP:leading-[16px]"
               >
-                {inView ? <CountUp end={3} duration={5} /> : 0}
+                {inView ? <CountUp end={yearsOfExperience} duration={5} /> : 0}
               </h2>
               <h3 className="text-[10px] leading-[14px] font-bold text-white uppercase laptop:text-[10px] phoneL:text-[8px] phoneP:text-[7px] phoneP:leading-[8px]">
                 Years <br />

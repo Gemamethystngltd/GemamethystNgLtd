@@ -113,7 +113,7 @@ function TeamMemebers() {
               key={index}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
-              className="h-[550px] relative laptop:h-[400px] phoneL:h-[500px] group  phoneP:h-[400px]"
+              className="!h-[500px] relative laptop:h-[400px] phoneL:h-[500px] group  phoneP:h-[400px]"
             >
               <span
                 onClick={() => {
