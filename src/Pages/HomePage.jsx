@@ -1,5 +1,5 @@
 import HeroSection from "../components/Home/herosection";
-// import NavBar from "../components/Home/NavBar";
+import NavBar from "../components/Home/NavBar";
 import Solutions from "../components/Home/solutions";
 import Ftco from "../components/Home/Ftco";
 import Overlay from "../components/Home/overlay";
@@ -23,6 +23,7 @@ function HomePage() {
   return (
     <>
       <main className="relative">
+        <NavBar />
         <ToTopBtn />
         <ScrollToTop />
         <HeroSection />

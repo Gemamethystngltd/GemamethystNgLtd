@@ -143,30 +143,30 @@ export const porfolio = [
 export const testimonials = [
   {
     quote:
-      "AIworksquad has been a game-changer for my business. Their virtual assistants have helped me manage complex projects, handle customer queries, and reduce costs.",
-    name: "Larry Devis",
-    title: "SWE Owner",
+      "In all this was incredibly beneficial to my ability to communicate a technical idea, work across disciplines, and contribute in an environment driven by people and time. Nevertheless, I have also learned how to tackle tasks with limited time without panicking.",
+    name: "Samuel Ezealor",
+    title: "Back-End Developer",
     img: Avatar1,
   },
   {
     quote:
-      "AIworksquad's state-of-the-art technology has helped me stay ahead of the competition. Their AI-powered virtual assistant has enabled me to automate tasks, reduce errors, and enhance efficiency.",
-    name: "Rajiv Manohar",
-    title: "SWE Owner",
+      "This project has also helped me to develop a key skill in the industry and that's teamwork. It also helped me stay focused and work effectively, even within a short timeframe. This will improve my productivity which is something I really need to work on.",
+    name: "Abraham Ojabugbe",
+    title: "AI/ML",
     img: Avatar2,
   },
   {
     quote:
-      "Since partnering with AIworksquad, I've seen a significant improvement in my business's productivity. Their AI-powered technology has helped me save time and make informed decisions.",
-    name: "Lynda",
-    title: "SWE Owner",
+      "This experience helped me think critically about how to simplify a complex solution into core, functional parts. I particularly appreciated the collaborative and time-sensitive nature of the task. It also gave me insight into how technical and non-technical elements come together in a real-world product development scenario.",
+    name: "Yusrah Eruaga Mohammed",
+    title: "Front-End Developer",
     img: Avatar3,
   },
   {
     quote:
-      "Since partnering with AIworksquad, I've seen a significant improvement in my business's productivity. Their AI-powered technology has helped me save time and make informed decisions .",
-    name: "Larry Davis",
-    title: "SWE Owner",
+      "Interning at Gemamethyst Nigeria Limited has given me hands-on experience with managing social media campaigns and analyzing audience engagement. It's been a great opportunity to apply my skills in a real-world setting and learn how digital strategy impacts brand growth.",
+    name: "Aina Abdulsalam",
+    title: "Social Media Intern",
     img: Avatar1,
   },
 ];

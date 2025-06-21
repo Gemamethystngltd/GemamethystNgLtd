@@ -1,23 +1,77 @@
+import { FaChevronRight } from "react-icons/fa";
+
 const SolutionBox = ({ text, icon }) => {
   return (
     <div
       data-aos="fade-up-right"
-      className="Solutions_box w-[250px] h-[240px] box pt-6 px-4 flex   flex-col bg-vantablack gap-6 rounded-lg   laptop:w-[200px] laptop:h-[200px] tablet:w-[150px] tablet:h-[150px] phoneL:w-[180px] phoneL:h-[180px] phoneP:w-[130px] phoneP:h-[130px] "
+      className="
+        group relative
+        w-[130px] h-[130px]         
+        phoneL:w-[150px] phoneL:h-[150px]
+        tablet:w-[180px] tablet:h-[180px]
+        laptop:w-[200px] laptop:h-[200px]
+        wide:w-[240px] wide:h-[220px]
+        pt-6 px-4 mt-4
+        flex flex-col gap-6
+        bg-vantablack rounded-lg
+        transition-all duration-300
+        hover:bg-webpurple
+      "
     >
-      <div className="box_header flex justify-end pr-4 phoneP:pr-2">
-        {/* <i className={`${icon} text-[4.5rem]   text-webpurple`}></i> */}
-        <img
-          src={icon}
-          data-aos="zoom-in"
-          data-aos-delay="600"
-          alt="icon"
-          className="w-[5rem] h-[4.8rem] laptop:h-[4rem] laptop:w-[4rem] tablet:w-[3rem] tablet:h-[3rem] phoneL:w-[3.4rem] phoneL:h-[3.4rem] phoneP:w-[2.3rem] phoneP:h-[2.3rem]"
-        />
+      <div className="box_header flex justify-end pr-2">
+        <div
+          className="
+            p-2
+            bg-vantablack
+            rounded-full
+            z-10             
+            transition-colors duration-300
+            group-hover:bg-vantablack
+          "
+        >
+          <img
+            src={icon}
+            alt="icon"
+            className="
+              w-[2.5rem] h-[2.5rem]
+              phoneL:w-[3rem] phoneL:h-[3rem]
+              tablet:w-[3.5rem] tablet:h-[3.5rem]
+              laptop:w-[4rem] laptop:h-[4rem]
+              transition-transform duration-300
+              group-hover:rotate-12
+            "
+          />
+        </div>
       </div>
+
       <div className="box_content">
-        <h2 className="text-white uppercase w-[70%] text-[18px] tracking-[1px] leading-[27px] font-[700] laptop:text-[16px] laptop:leading-[18px]  tablet:text-[14px] tablet:leading-[16px] phoneP:text-[11px] phoneP:leading-[12px]">
+        <h2
+          className="
+            text-white uppercase font-[700] tracking-[1px]
+            text-[12px] leading-[14px]
+            phoneL:text-[13px] phoneL:leading-[16px]
+            tablet:text-[14px] tablet:leading-[18px]
+            laptop:text-[15px] laptop:leading-[20px]
+            wide:text-[16px] wide:leading-[22px]
+            w-[80%]
+          "
+        >
           {text}
         </h2>
+      </div>
+
+      <div
+        className="
+          w-8 h-8 rounded-full bg-black border-2
+          wide:border-4 laptop:border-4 desktop:border-4 border-webpurple
+          absolute -bottom-5 right-4
+          flex items-center justify-center
+          opacity-0 -translate-x-4
+          transition-all duration-300
+          group-hover:opacity-100 group-hover:translate-x-0
+        "
+      >
+        <FaChevronRight className="text-webpurple text-xl" />
       </div>
     </div>
   );

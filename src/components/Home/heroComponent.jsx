@@ -1,9 +1,7 @@
-import NavBar from "./NavBar";
-
+import { Link } from "react-router-dom";
 const Hero = ({ img, mainText }) => {
   return (
     <>
-      <NavBar />
       <section
         style={{ background: `url(${img}) no-repeat center center/cover` }}
         className="h-[95vh]  flex items-center !bg-no-repeat !bg-cover !bg-center "
@@ -18,13 +16,26 @@ const Hero = ({ img, mainText }) => {
           <p className="text-lightwhite font-normal text-[16px] laptop:text-[13px] tablet:text-[12px] phoneL:text-[11px] phoneP:text-[10px] ">
             We listen , we act because we belive you are worth it{" "}
           </p>
-          <div className="btn_container  gap-4 flex items-center mt-2 p-2 tablet:gap-2 tablet:p-1 tablet:mt-3 phoneL:mt-2">
-            <button className="btn btn_get_started px-[12px] uppercase tracking-[1px] py-[14px] bg-webpurple text-white text-[13px] cursor-pointer font-bold rounded-md laptop:text-[11px] laptop:px-[11px] laptop:py-[12px] tablet:px-[10px] tablet:py-[11px] phoneL:px-[10px] phoneL:py-[10px] phoneL:text-[9px] phoneP:text-[8px] phoneP:px-[8px] phoneP:py-[8px]">
-              Get Started
-            </button>
-            <button className="btn btn_view px-[12px] uppercase tracking-[1px] py-[14px] bg-white border-none cursor-pointer text-[13px] font-bold rounded-md  laptop:text-[11px] laptop:px-[11px] laptop:py-[12px]  tablet:px-[10px] tablet:py-[11px]  phoneL:px-[10px] phoneL:py-[10px] phoneL:text-[9px] phoneP:text-[8px] phoneP:px-[8px] phoneP:py-[8px]">
-              View Portfolio
-            </button>
+
+          <div className="btn_container gap-4 flex items-center mt-2 p-2 tablet:gap-2 tablet:p-1 tablet:mt-3 phoneL:mt-2">
+            <Link to={"/pricing"}>
+              <div>
+                <button className="btn btn_get_started px-[12px] uppercase tracking-[1px] py-[14px] bg-webpurple text-white text-[13px] cursor-pointer font-bold rounded-md laptop:text-[11px] laptop:px-[11px] laptop:py-[12px] tablet:px-[10px] tablet:py-[11px] phoneL:px-[10px] phoneL:py-[10px] phoneL:text-[9px] phoneP:text-[8px] phoneP:px-[8px] phoneP:py-[8px]">
+                  Get Started
+                </button>
+              </div>
+            </Link>
+
+            <Link to={"/portfolio"}>
+              <div className="relative overflow-hidden group">
+                <button className="btn btn_view px-[12px] uppercase tracking-[1px] py-[14px] bg-white text-webpurple border-none cursor-pointer text-[13px] font-bold rounded-md  laptop:text-[11px] laptop:px-[11px] laptop:py-[12px]  tablet:px-[10px] tablet:py-[11px]  phoneL:px-[10px] phoneL:py-[10px] phoneL:text-[9px] phoneP:text-[8px] phoneP:px-[8px] phoneP:py-[8px]">
+                  View Portfolio
+                </button>
+                <button className="btn btn_view absolute inset-0 px-[12px] uppercase tracking-[1px] py-[14px] bg-black text-white flex -translate-x-full group-hover:translate-x-0 transition-transform duration-300 border-none cursor-pointer text-[13px] font-bold rounded-md  laptop:text-[11px] laptop:px-[11px] laptop:py-[12px]  tablet:px-[10px] tablet:py-[11px]  phoneL:px-[10px] phoneL:py-[10px] phoneL:text-[9px] phoneP:text-[8px] phoneP:px-[8px] phoneP:py-[8px]">
+                  View Portfolio
+                </button>
+              </div>
+            </Link>
           </div>
         </div>
       </section>

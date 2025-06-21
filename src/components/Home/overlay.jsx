@@ -15,7 +15,7 @@ const Overlay = () => {
     });
   }, []);
   const { ref, inView } = useInView({
-    triggerOnce: true,
+    triggerOnce: false,
     threshold: 0.5,
   });
   const data = [

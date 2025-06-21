@@ -6,25 +6,39 @@ function TestimonialsCarousel() {
     dots: true,
     infinite: true,
     speed: 800,
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     centerMode: true,
-    centerPadding: "150px",
+    centerPadding: "15px",
     autoplaySpeed: 3000,
     responsive: [
       {
+        breakpoint: 1439, // Adjust for smaller screens
+        settings: {
+          centerPadding: "20px",
+          slidesToShow: 2,
+        },
+      },
+       {
         breakpoint: 1024, // Adjust for smaller screens
         settings: {
-          centerPadding: "120px",
+          centerPadding: "20px",
+          slidesToShow: 2,
+        },
+      },
+       {
+        breakpoint: 900, // Adjust for smaller screens
+        settings: {
+          centerPadding: "20px",
           slidesToShow: 2,
         },
       },
       {
-        breakpoint: 800, // Mobile adjustments
+        breakpoint: 700, // Mobile adjustments
         settings: {
-          slidesToShow: 1.2,
-          centerPadding: "80px",
+          slidesToShow: 1,
+          centerPadding: "0px",
         },
       },
       {
@@ -38,17 +52,17 @@ function TestimonialsCarousel() {
   };
 
   return (
-    <section className="">
+    <section className="pb-8">
       <Slider {...settings}>
         {testimonials.map((testimonial, index) => (
-          <div key={index} className="rounded-lg  flex gap-2 p-2  h-auto ">
-            <div className="flex flex-col rounded-lg w-[550px] justify-between   h-[215px] px-4 ml-4 mb-2  bg-[#ffff]  shadow-lg laptop:h-[160px] laptop:w-[100%] phoneP:h-[120px]    laptop:shadow-md ">
+          <div key={index} className="rounded-lg flex p-2">
+           <div className="flex flex-col rounded-lg w-full max-w-[550px] phoneP:h-[30vh] phoneL:h-[35vh] phoneS:h-[35vh] tablet:h-[35vh] laptop:h-[35vh] desktop:h-[50vh] wide:h-[50vh] justify-between px-4 py-6 bg-white shadow-lg">
               <div className="quote_section">
                 <p className="text-gray-700 text-base  block mt-8   text-wrap laptop:leading-4  laptop:text-[.7rem] laptop:mt-4 tablet:text-[.65rem] phoneP:text-[.5rem] phoneP:leading-3 ">
                   {testimonial.quote}
                 </p>
               </div>
-              <div className="testimonail_content mt-4 ml-4 flex items-center laptop:mt-2 laptop:ml-2">
+              <div className="testimonail_content mt-2 ml-4 flex items-center laptop:mt-2 laptop:ml-2">
                 <div className="Testimonail_img_container">
                   <img
                     src={testimonial.img}

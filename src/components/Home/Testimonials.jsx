@@ -1,7 +1,7 @@
 import TestimonialsCarousel from "./TestimonialsCarousel";
 const Testimonails = () => {
   return (
-    <section className="testimonail_section mt-[10rem] flex flex-col gap-9 laptop:gap-6 phoneL:mt-[5rem] phoneP:gap-4">
+    <section className="testimonail_section mt-[10rem] pb-12 flex flex-col gap-9 laptop:gap-6 phoneL:mt-[5rem] phoneP:gap-4">
       <header
         data-aos="fade-up"
         className="team_header  flex justify-between items-center w-[70%] mx-auto   laptop:w-[80%] phoneL:w-[90%]  phoneP:w-[95%]  "
@@ -19,7 +19,7 @@ const Testimonails = () => {
         </div>
       </header>
 
-      <div className=" overflow-hidden h-[35vh]   ">
+      <div className="overflow-x-hidden w-full">
         <TestimonialsCarousel />
       </div>
     </section>
