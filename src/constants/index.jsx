@@ -19,7 +19,7 @@ import bg5 from "../assets/images/xwork-7.jpg.pagespeed.ic.SotmrmTuoS.jpg";
 import bg6 from "../assets/images/xwork-8.jpg.pagespeed.ic.kEJc9g0qrQ.jpg";
 
 // testimonia imports:
-import Avatar1 from "../assets/images/xperson_1.jpg.pagespeed.ic.P4pHl6glbj.jpg";
+import Avatar1 from "../assets/images/IMG_1902~3 - Samuel Ezealo.jpg";
 import Avatar2 from "../assets/images/xperson_2.jpg.pagespeed.ic.yyrmjBH91b.jpg";
 import Avatar3 from "../assets/images/xstaff-1.jpg.pagespeed.ic.eGaw1QpE70.jpg";
 
@@ -500,12 +500,12 @@ export const contacData = [
   {
     icon: "fa-solid fa-location-dot",
     title: "Address",
-    description: "Omu-Aran",
+    description: "Lagos, Nigeria",
   },
   {
     icon: "fa-solid fa-phone",
     title: "Phone",
-    description: "+234 815 9531 614",
+    description: "+234 802 8920 379",
   },
   {
     icon: "fa-solid fa-envelope",
