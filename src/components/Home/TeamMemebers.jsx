@@ -37,8 +37,8 @@ function TeamMemebers() {
   };
   const teamData = [
     {
-      name: "Ohore Emmaneul",
-      role: "Frontend Developer",
+      name: "OTUENE Hephzibah Reginald",
+      role: "Founder/CEO",
       socialMedia: [
         "fa-linkedin-in",
         "fa-google",
