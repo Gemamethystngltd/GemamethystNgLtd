@@ -1,7 +1,8 @@
 import Subhero from "../components/headinghero";
 import NavBar from "../components/Home/NavBar";
 import PricingComps from "../components/PricingComps";
-import Solutions from "../components/Home/solutions";
+import PricingAbout from "../components/PricingAbout";
+import PricingServices from "../components/PricingServices";
 import Newslettersection from "../components/newsletter";
 import Footer from "../components/Home/Footer";
 import ScrollToTop from "../components/ScrollToTop";
@@ -11,10 +12,11 @@ function PricingPage() {
     <main>
       <ToTopBtn />
       <ScrollToTop />
-      <Subhero page={"Pricing"} />
+      <Subhero page={"GemAcademy"} />
       <NavBar />
       <PricingComps />
-      <Solutions />
+      <PricingAbout />
+      <PricingServices />
       <Newslettersection />
       <Footer />
     </main>

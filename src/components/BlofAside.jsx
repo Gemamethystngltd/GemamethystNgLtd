@@ -122,7 +122,7 @@ function BlofAside({ searchQuery, handlesearch }) {
           </h2>
         </div>
       </div>
-      <div className="paragrahn flex flex-col gap-4 tablet:gap-2">
+      {/* <div className="paragrahn flex flex-col gap-4 tablet:gap-2">
         <h1
           data-aos="fade-down"
           className="font-bold text-[20px] leading-[30px] uppercase  laptop:text-[17px] laptop:leading-[25px] tablet:text-[15px]"
@@ -138,7 +138,7 @@ function BlofAside({ searchQuery, handlesearch }) {
           sunt placeat nam vero culpa sapiente consectetur similique, inventore
           eos fugit cupiditate numquam!
         </p>
-      </div>
+      </div> */}
     </section>
   );
 }

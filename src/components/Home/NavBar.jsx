@@ -61,7 +61,7 @@ function NavBar() {
         </div>
 
         {/* Desktop Nav Links */}
-        <ul className="nav_links flex gap-16 items-center font-semibold laptop:gap-10 tablet:gap-7 phoneL:hidden phoneS:gap-5 phoneS:items-end">
+        <ul className="nav_links flex gap-16 items-center font-semibold laptop:gap-10 tablet:gap-7 laptop:hidden phoneS:gap-5 phoneS:items-end">
           {navData.map((data, index) => (
             <li
               key={index}
@@ -78,10 +78,14 @@ function NavBar() {
 
       {/* Hamburger */}
       <button
-        className="hidden phoneL:block phoneP:block fixed top-6 right-6 mt-6 z-30 text-white bg-webpurple p-2 rounded-md"
+        className="hidden phoneL:block phoneP:block phoneS:block tablet:block laptop:block fixed top-6 right-6 mt-6 z-30 text-white bg-webpurple p-2 rounded-md"
         onClick={toggleNavBar}
       >
-        {isOpen ? <FaTimes size={20} /> : <FaEquals size={20} />}
+        {isOpen ? (
+          <FaTimes className="phoneP:w-3 phoneP:h-3 phoneL:w-3 phoneL:h-3 tablet:w-4 tablet:h-4 laptop:w-4 laptop:h-4" />
+        ) : (
+          <FaEquals className="phoneP:w-3 phoneP:h-3 phoneL:w-3 phoneL:h-3 tablet:w-4 tablet:h-4 laptop:w-4 laptop:h-4" />
+        )}
       </button>
 
       {/* Mobile Dropdown rendered outside nav */}

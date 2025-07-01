@@ -6,24 +6,27 @@ import ux from "../assets/icons/web-design.png";
 import branding from "../assets/icons/branding.png";
 import web from "../assets/icons/web-programming.png";
 import cer from "../assets/icons/certificate.png";
+import data from "../assets/icons/Data-Analysis.png";
+import Engineer from "../assets/icons/Engineer.png";
 
 // pdf importsd
 import pdf1 from "../assets/pdf/PRINCIPLES OF DISEASE CONTROL AND USES OF EPIDEMIOLOGY.pdf";
 
 // porfolio imports:
-import bg1 from "../assets/images/xwork-1.jpg.pagespeed.ic.ll4YaSK4EN.jpg";
-import bg2 from "../assets/images/xwork-2.jpg.pagespeed.ic.r-iPsMtsGp.jpg";
+import bg1 from "../assets/images/faceless.png";
+import bg2 from "../assets/images/design.jpg";
 import bg3 from "../assets/images/xwork-3.jpg.pagespeed.ic.KnEiS52Z3l.jpg";
 import bg4 from "../assets/images/xwork-4.jpg.pagespeed.ic.LMea4nnNOz.jpg";
 import bg5 from "../assets/images/xwork-7.jpg.pagespeed.ic.SotmrmTuoS.jpg";
 import bg6 from "../assets/images/xwork-8.jpg.pagespeed.ic.kEJc9g0qrQ.jpg";
 
-// testimonia imports:
-import Avatar1 from "../assets/images/IMG_1902~3 - Samuel Ezealo.jpg";
-import Avatar2 from "../assets/images/xperson_2.jpg.pagespeed.ic.yyrmjBH91b.jpg";
-import Avatar3 from "../assets/images/xstaff-1.jpg.pagespeed.ic.eGaw1QpE70.jpg";
+// testimonial imports:
+import Avatar1 from "../assets/images/aina.png";
+import Avatar2 from "../assets/images/sam.png";
+import Avatar3 from "../assets/images/abraham.png";
+import Avatar4 from "../assets/images/yusrah.png";
 
-// blog sevtion imports
+// blog section imports
 import img1 from "../assets/images/ximage_1.jpg.pagespeed.ic.2BInOJMs0v.jpg";
 import img2 from "../assets/images/ximage_2.jpg.pagespeed.ic.fDt7QyzCfC.jpg";
 import img3 from "../assets/images/ximage_3.jpg.pagespeed.ic.CzImA-z_Ch.jpg";
@@ -32,41 +35,249 @@ import img4 from "../assets/images/xwork-9.jpg.pagespeed.ic.BYds7aMzrK.jpg";
 // import img6 from "../assets/images/xwork-7.jpg.pagespeed.ic.SotmrmTuoS.jpg";
 // import img7 from "../assets/images/ximage_4.jpg.pagespeed.ic.9VUxuBaVRa.jpg";
 
-//content datat fro the faqs sectioin
+//content data from the faqs section
 export const faqs = [
   {
-    question: "How to fix a problem?",
+    question: "What is Gemamethyst Nigeria Limited?",
     answer: [
-      "Be calm",
-      "Understand the source of the problem",
-      "Think outside the box",
-      " Be a team player, so the problem is solved faster",
-      "Appreciate everyone for the solutions offered.",
+      "Gemamethyst Nigeria Limited is a multi-industry innovation and consulting company based in Lagos, Nigeria. The company specializes in digital transformation, AI solutions, engineering consulting,  and capacity development through its in-house academy. They work with startups, SMEs, and enterprises to deliver sustainable and tech-driven growth.",
     ],
   },
   {
-    question: "How to manage your Website?",
+    question: "Where is GemamethystNgltd located?",
     answer: [
-      "What is your target audience",
-      "What is your brand saying",
-      " How should your customers feel when they are on your website",
-      " Your website should be updated quarterly",
+      "We are headquartered in Lekki, Lagos State, Nigeria. While we serve clients locally, many of our services, including training and consulting, are also available remotely across Nigeria and globally.",
     ],
   },
   {
-    question: "How to grow your investments funds?",
+    question: "How can I contact your team for inquiries or support?",
     answer: [
-      "Do not rush into investments",
-      "Understand what the market is saying",
-      "Read all terms and conditions before signing any form of agreement",
-      " Start small",
-      "Think big",
+      "You can reach us through the contact form on our website, by email at amethystngltd@gmail.com, or via social media (@_.GemamethystNgLtd._ on all platforms). We typically respond within 24 hours on business days.",
     ],
   },
   {
-    question: "   What are those requirements for businesses?",
+    question: "Who are the key people behind the company?",
     answer: [
-      "Major requirement to start a business is the idea,a thorough research must be carried out in order to have a realistic feasible study. Team members- people to help actualize those plans with actions. For proper and legal acknowledgement of the idea CAC registration is required.",
+      "GemamethystNgLtd is led by a passionate team of professionals including Hephzibah Otuene (CEO) and Omotola Daniel Ayomide. The team includes experienced digital strategists, engineers, trainers, and startup advisors.",
+    ],
+  },
+  {
+    question: "What industries do you primarily work with?",
+    answer: [
+      "Technology & Startups",
+      "Architecture, Engineering & Construction (AEC)",
+      "Oil & Gas",
+      "Education & Training",
+      "Small and Medium Enterprises(SMEs)",
+    ],
+  },
+];
+
+export const AllTheFaqs = [
+  {
+    title: "General Questions",
+    faqs: [
+      {
+        question: "What is Gemamethyst Nigeria Limited?",
+        answer: [
+          "Gemamethyst Nigeria Limited is a multi-industry innovation and consulting company based in Lagos, Nigeria. The company specializes in digital transformation, AI solutions, engineering consulting, and capacity development through its in-house academy. They work with startups, SMEs, and enterprises to deliver sustainable and tech-driven growth.",
+        ],
+      },
+      {
+        question: "Where is GemamethystNgltd located?",
+        answer: [
+          "We are headquartered in Lekki, Lagos State, Nigeria. While we serve clients locally, many of our services, including training and consulting, are also available remotely across Nigeria and globally.",
+        ],
+      },
+      {
+        question: "How can I contact your team for inquiries or support?",
+        answer: [
+          "You can reach us through the contact form on our website, by email at amethystngltd@gmail.com, or via social media (@_.GemamethystNgLtd._ on all platforms). We typically respond within 24 hours on business days.",
+        ],
+      },
+      {
+        question: "Who are the key people behind the company?",
+        answer: [
+          "GemamethystNgLtd is led by a passionate team of professionals including Hephzibah Otuene (CEO) and Omotola Daniel Ayomide. The team includes experienced digital strategists, engineers, trainers, and startup advisors.",
+        ],
+      },
+      {
+        question: "What industries do you primarily work with?",
+        answer: [
+          "Technology & Startups",
+          "Architecture, Engineering & Construction (AEC)",
+          "Oil & Gas",
+          "Education & Training",
+          "Small and Medium Enterprises (SMEs)",
+        ],
+      },
+    ],
+  },
+  {
+    title: "AI & Digital Innovation",
+    faqs: [
+      {
+        question: "What AI-based solutions do you offer for business?",
+        answer: [
+          "We aim to develop and integrate AI tools tailored to improve productivity, automate tasks, support decision-making, and enhance customer engagement for small businesses and startups.",
+        ],
+      },
+      {
+        question: "Do you build custom software or digital tools for clients?",
+        answer: [
+          "Yes, we offer custom software and smart tools designed to meet specific business needs, including workflow automation, analytics dashboards, and chatbot systems.",
+        ],
+      },
+      {
+        question: "Can you help small businesses with digital transformation?",
+        answer: [
+          "Absolutely. We guide SMEs through digitization—helping them implement the right technologies, digital strategies, and online tools for growth.",
+        ],
+      },
+    ],
+  },
+  {
+    title: "Social Media & Marketing",
+    faqs: [
+      {
+        question: "What kind of social media management services do you offer?",
+        answer: [
+          "We provide full-cycle services including strategy development, content creation, community management, analytics reporting, and ad management across major platforms.",
+        ],
+      },
+      {
+        question: "Do you offer content creation or only strategy consulting?",
+        answer: [
+          "We do both. Our team creates branded content (graphics, videos, captions) and offers consulting to improve your brand voice, engagement, and conversions.",
+        ],
+      },
+      {
+        question:
+          "Can I enroll in your social media training or internship programs?",
+        answer: [
+          "Yes. Our Social Media Internship Program and masterclasses are open to students, young professionals, and business owners looking to build digital skills. Check our Academy page for open registrations.",
+        ],
+      },
+    ],
+  },
+  {
+    title: "Engineering, AEC & Oil & Gas",
+    faqs: [
+      {
+        question: "Do you provide engineering consulting services?",
+        answer: [
+          "Yes. We provide design, project management, and technology integration services for construction, infrastructure, and energy-related projects.",
+        ],
+      },
+      {
+        question:
+          "Can you support tech implementation in the construction sector?",
+        answer: [
+          "Yes, we help AEC firms adopt tools such as BIM, project management software, and data visualization systems to improve efficiency and accountability.",
+        ],
+      },
+    ],
+  },
+  {
+    title: "Data Analytics & Business Intelligence",
+    faqs: [
+      {
+        question:
+          "Can you help my company interpret performance metrics or reports?",
+        answer: [
+          "Yes, our analysts can walk your team through key metrics, help identify trends, and make practical recommendations based on your performance data.",
+        ],
+      },
+      {
+        question: "What business intelligence services do you provide?",
+        answer: [
+          "We help companies collect, analyze, and visualize data to drive smarter business decisions. This includes dashboard development, KPI tracking, and data-driven strategy consulting.",
+        ],
+      },
+      {
+        question: "Do you offer data analysis tools or just consulting?",
+        answer: [
+          " We provide both: hands-on consulting and the development of dashboards or automated reporting systems tailored to your business operations.",
+        ],
+      },
+    ],
+  },
+  {
+    title: "Training & Academy",
+    faqs: [
+      {
+        question: "What is GemAcademy?",
+        answer: [
+          "Gemamethyst Academy is our learning platform where we offer short courses, workshops, and internships in areas such as Engineering skill set, career sets.",
+        ],
+      },
+      {
+        question: "What courses or training programs are available?",
+        answer: ["Prota structure, Python, SQL, AutoCAD"],
+      },
+      {
+        question: "How do I apply for training or internship opportunities?",
+        answer: [
+          "Visit our website or follow our Instagram for current enrollment links. Applications typically require a form submission and a brief introduction or task.",
+        ],
+      },
+      {
+        question: "What courses or training programs are available?",
+        answer: ["Prota structure, Python, SQL, AutoCAD"],
+      },
+      {
+        question: "Are your training programs remote, on-site or hybrid?",
+        answer: [
+          "Most of our programs are remote, but we occasionally offer on-site workshops and hybrid learning experiences depending on the course.",
+        ],
+      },
+    ],
+  },
+  {
+    title: "Startups & Mentorship",
+    faqs: [
+      {
+        question: "Do you support early-stage startups?",
+        answer: [
+          "Yes, we provide strategic guidance, branding, digital tools, and mentorship to help new startups grow sustainably and attract funding.",
+        ],
+      },
+      {
+        question:
+          "Can I get mentorship or business coaching through your platform?",
+        answer: [
+          "Yes. Our mentorship programs pair you with professionals in your industry to guide your business development and leadership growth.",
+        ],
+      },
+      {
+        question: "Are your startup services free or paid?",
+        answer: [
+          "We offer both. Some mentorship programs are free (especially through partnerships), while others, including in-depth consulting and branding services, are paid.",
+        ],
+      },
+    ],
+  },
+  {
+    title: "Pricing, Payments & Partnerships",
+    faqs: [
+      {
+        question: "How do you charge for your services?",
+        answer: [
+          " Pricing depends on the service scope and project type. We offer fixed packages, custom quotes, and subscription-based options for ongoing services.",
+        ],
+      },
+      {
+        question: "Can I get a custom quote for a specific project?",
+        answer: [
+          "Yes. Please fill out our project inquiry form or contact us with your needs. We’ll follow up with a tailored proposal.",
+        ],
+      },
+      {
+        question: "Are you open for partnerships or joint ventures?",
+        answer: [
+          "Definitely. We welcome strategic partnerships, collaborations, and affiliate opportunities. Reach out to our team for a discovery call.",
+        ],
+      },
     ],
   },
 ];
@@ -78,7 +289,7 @@ export const services = [
   },
   {
     text: " Engineering Designs",
-    serviceicon: horn,
+    serviceicon: Engineer,
   },
   {
     text: " Digital Products",
@@ -86,8 +297,12 @@ export const services = [
   },
 
   {
-    text: "Online Marketing",
+    text: "Digital Marketing",
     serviceicon: stats,
+  },
+  {
+    text: "Data Analysis",
+    serviceicon: data,
   },
   {
     text: " Graphic Designs",
@@ -146,21 +361,21 @@ export const testimonials = [
       "In all this was incredibly beneficial to my ability to communicate a technical idea, work across disciplines, and contribute in an environment driven by people and time. Nevertheless, I have also learned how to tackle tasks with limited time without panicking.",
     name: "Samuel Ezealor",
     title: "Back-End Developer",
-    img: Avatar1,
+    img: Avatar2,
   },
   {
     quote:
       "This project has also helped me to develop a key skill in the industry and that's teamwork. It also helped me stay focused and work effectively, even within a short timeframe. This will improve my productivity which is something I really need to work on.",
     name: "Abraham Ojabugbe",
     title: "AI/ML",
-    img: Avatar2,
+    img: Avatar3,
   },
   {
     quote:
       "This experience helped me think critically about how to simplify a complex solution into core, functional parts. I particularly appreciated the collaborative and time-sensitive nature of the task. It also gave me insight into how technical and non-technical elements come together in a real-world product development scenario.",
     name: "Yusrah Eruaga Mohammed",
     title: "Front-End Developer",
-    img: Avatar3,
+    img: Avatar4,
   },
   {
     quote:
@@ -419,79 +634,14 @@ export const blogspostlong = [
 
 export const porfoliolong = [
   {
-    title: "Web Application",
-    description: "Interior Design",
+    title: "Design fundamentals",
+    description: "Last year March.",
     bgImage: bg1,
   },
   {
-    title: "Web Application",
-    description: "Interior Design",
+    title: "Faceless",
+    description: "Last year September",
     bgImage: bg2,
-  },
-  {
-    title: "Web Application",
-    description: "Interior Design",
-    bgImage: bg3,
-  },
-  {
-    title: "Web Application",
-    description: "Interior Design",
-    bgImage: bg4,
-  },
-  {
-    title: "Web Application",
-    description: "Interior Design",
-    bgImage: bg5,
-  },
-  {
-    title: "Web Application",
-    description: "Interior Design",
-    bgImage: bg2,
-  },
-  {
-    title: "Web Application",
-    description: "Interior Design",
-    bgImage: bg4,
-  },
-  {
-    title: "Web Application",
-    description: "Interior Design",
-    bgImage: bg1,
-  },
-  {
-    title: "Web Application",
-    description: "Interior Design",
-    bgImage: bg5,
-  },
-  {
-    title: "Web Application",
-    description: "Interior Design",
-    bgImage: bg2,
-  },
-  {
-    title: "Web Application",
-    description: "Interior Design",
-    bgImage: bg5,
-  },
-  {
-    title: "Web Application",
-    description: "Interior Design",
-    bgImage: bg1,
-  },
-  {
-    title: "Web Application",
-    description: "Interior Design",
-    bgImage: bg4,
-  },
-  {
-    title: "Web Application",
-    description: "Interior Design",
-    bgImage: bg2,
-  },
-  {
-    title: "Web Application",
-    description: "Interior Design",
-    bgImage: bg6,
   },
 ];
 

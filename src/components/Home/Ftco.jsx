@@ -34,16 +34,16 @@ function Ftco() {
   });
   return (
     <>
-      <section className="ftco_section flex relative laptop:h-[105vh] tablet:h-auto  phoneL:flex-col phoneL:w-full phoneL:h-auto ">
-        <div className="img_container flex  w-[50%] phoneL:w-[100%] phoneL:mb-4 phoneL:h-[50vh] ">
+      <section className="ftco_section flex relative laptop:h-[105vh] tablet:h-auto  phoneS:flex-col phoneS:w-full phoneS:h-auto ">
+        <div className="img_container flex  w-[50%] phoneS:w-[100%] phoneS:mb-4 phoneS:h-[50vh] ">
           <img
-            className="w-1/2 ml-auto mr-[4rem] h-full laptop:w-full laptop:mr-1 laptop:m-0  tablet:my-auto phoneL:h-[100%] object-cover  phoneL:m-0 phoneL:ml-0"
+            className="w-1/2 ml-auto mr-[4rem] h-full laptop:w-full laptop:mr-1 laptop:m-0  tablet:my-auto phoneS:h-[100%] object-cover  phoneL:m-0 phoneL:ml-0"
             src={img1}
             alt="about"
           />
         </div>
 
-        <div className="ftco_text_container w-1/2 flex flex-col p-8 justify-center  gap-4 tablet:gap-2 phoneL:w-full phoneL:p-4 phoneL:gap-4">
+        <div className="ftco_text_container w-1/2 flex flex-col p-8 justify-center  gap-4 tablet:gap-2 phoneS:w-full phoneS:p-4 phoneS:gap-4">
           <h3
             data-aos="fade-up"
             className="uppercase font-semibold leading-[23px] text-[13px] text-webpurple tablet:text-[11px] phoneL:text-[10px] phoneL:tracking-[2px] phoneP:text-[10px] phoneP:tracking-[1px]"
@@ -68,7 +68,7 @@ function Ftco() {
             resources, fostering sustainable growth and impactful careers.
           </p>
 
-          <div className="absolute bg-webpurple bottom-[1rem] right-[48%] translate-x-[50%] w-[24%] p-3 flex gap-6 laptop:w-[27%] laptop:p-2 tablet:w-[35%]  phoneL:static phoneL:w-full phoneL:translate-x-0">
+          <div className="absolute bg-webpurple bottom-[1rem] right-[48%] translate-x-[50%] w-[24%] p-3 flex gap-6 laptop:w-[27%] laptop:p-2 tablet:w-[35%] phoneS:static phoneS:w-full phoneS:translate-x-0">
             <div className="ftco_icon ">
               <div className="bg-black rounded-full  p-4  phoneL:p-3 ">
                 <img
@@ -86,8 +86,8 @@ function Ftco() {
                 {inView ? <CountUp end={yearsOfExperience} duration={5} /> : 0}
               </h2>
               <h3 className="text-[10px] leading-[14px] font-bold text-white uppercase laptop:text-[10px] phoneL:text-[8px] phoneP:text-[7px] phoneP:leading-[8px]">
-                Years <br />
-                of Experience
+                Years Of <br />
+               Experience
               </h3>
             </div>
           </div>

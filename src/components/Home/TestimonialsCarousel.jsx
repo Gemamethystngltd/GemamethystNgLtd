@@ -58,7 +58,7 @@ function TestimonialsCarousel() {
           <div key={index} className="rounded-lg flex p-2">
            <div className="flex flex-col rounded-lg w-full max-w-[550px] phoneP:h-[30vh] phoneL:h-[35vh] phoneS:h-[35vh] tablet:h-[35vh] laptop:h-[35vh] desktop:h-[50vh] wide:h-[50vh] justify-between px-4 py-6 bg-white shadow-lg">
               <div className="quote_section">
-                <p className="text-gray-700 text-base  block mt-8   text-wrap laptop:leading-4  laptop:text-[.7rem] laptop:mt-4 tablet:text-[.65rem] phoneP:text-[.5rem] phoneP:leading-3 ">
+                <p className="text-gray-700 text-base block mt-8 text-wrap laptop:leading-4 laptop:text-[.7rem] laptop:mt-4 tablet:text-[.65rem] phoneP:text-[.5rem] phoneP:leading-3 ">
                   {testimonial.quote}
                 </p>
               </div>

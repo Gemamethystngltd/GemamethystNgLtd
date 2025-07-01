@@ -22,10 +22,11 @@ function Footer() {
     "fa-tiktok",
     "fa-facebook-f",
     "fa-twitter",
+    "fa-instagram"
   ];
 
   return (
-    <footer className="min-h-[70vh] laptop:pt-20 flex bg-[#232429] justify-center items-center px-6 tablet:px-4 phoneP:px-2">
+    <footer className="min-h-[70vh] laptop:pt-20 flex bg-[#232429] justify-center items-center px-6 tablet:px-10">
       <div className="w-[70%] flex gap-4 justify-between laptop:w-[90%] tablet:w-[100%] phoneL:flex-col phoneL:gap-6">
         {/* Company Info */}
         <div className="company_info flex-1 flex flex-col gap-6 laptop:w-[30%] laptop:gap-4 phoneL:w-[90%]">
@@ -43,7 +44,7 @@ function Footer() {
                   key={index}
                   data-aos="fade-up"
                   data-aos-delay={index * 100}
-                  className={`fa-brands ${item} text-white bg-webpurple p-3 rounded-full text-[14px] tablet:p-[.6rem] tablet:text-[12px] phoneP:p-[.5rem] phoneP:text-[11px]`}
+                  className={`fa-brands ${item} text-white bg-webpurple p-3 rounded-full text-[14px] tablet:p-[.3rem] phoneL:text-[8px] phoneS:text-[text-12px] tablet:text-[8px] desktop:text-[8px] phoneP:p-[.5rem] phoneP:text-[9px]`}
                 ></i>
               ))}
             </div>
@@ -51,7 +52,7 @@ function Footer() {
         </div>
 
         {/* Quick Links Grid */}
-        <div className="grid grid-cols-2 laptop:grid-cols-2 phoneS:grid-cols-2 tablet:grid-cols-2 phoneL:grid-cols-2 desktop:grid-cols-4 wide:grid-cols-4 gap-7 w-[70%] laptop:w-[90%] tablet:w-[100%]">
+        <div className="grid grid-cols-2 laptop:grid-cols-2 phoneS:grid-cols-2 tablet:grid-cols-3 phoneL:grid-cols-2 desktop:grid-cols-4 wide:grid-cols-4 gap-7 w-[70%] laptop:w-[90%] tablet:w-[100%]">
           {/* Explore */}
           <div className="explore flex flex-col gap-6 laptop:gap-3">
             <h1 className="uppercase text-[20px] text-white leading-[30px] font-bold laptop:text-[18px] tablet:text-[16px] tablet:leading-[20px] phoneL:text-[13px] phoneL:leading-[15px] phoneP:text-[10px] phoneP:leading-[13px]">
@@ -117,13 +118,13 @@ function Footer() {
             <div className="flex flex-col gap-2 laptop:gap-1">
               <div className="question_map flex gap-2 items-center">
                 <i className="fa-solid fa-map text-webpurple tablet:text-[.9rem] phoneL:text-[.7rem] phoneP:text-[.6rem]"></i>
-                <p className="text-[#BCBCBE] laptop:text-[14px] tablet:text-[12px] phoneL:text-[10px] phoneP:text-[9px]">
+                <p className="text-[#BCBCBE] text-nowrap laptop:text-[14px] tablet:text-[12px] phoneL:text-[10px] phoneP:text-[9px]">
                   Omu-Aran, Kwara-State
                 </p>
               </div>
               <div className="question_phone flex items-center gap-2">
                 <i className="fa-solid fa-phone text-webpurple text-[.9rem] phoneL:text-[.7rem] phoneP:text-[.6rem]"></i>
-                <p className="text-[#BCBCBE] laptop:text-[14px] tablet:text-[12px] phoneL:text-[10px] phoneP:text-[9px]">
+                <p className="text-[#BCBCBE] text-nowrap laptop:text-[14px] tablet:text-[12px] phoneL:text-[10px] phoneP:text-[9px]">
                   +234 815 9531 614
                 </p>
               </div>
