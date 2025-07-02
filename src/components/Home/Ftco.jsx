@@ -43,7 +43,7 @@ function Ftco() {
           />
         </div>
 
-        <div className="ftco_text_container w-1/2 flex flex-col p-8 justify-center  gap-4 tablet:gap-2 phoneS:w-full phoneS:p-4 phoneS:gap-4">
+        <div className="ftco_text_container w-1/2 flex flex-col p-8 justify-center gap-4 tablet:gap-2 phoneS:w-full phoneS:p-4 phoneS:gap-4">
           <h3
             data-aos="fade-up"
             className="uppercase font-semibold leading-[23px] text-[13px] text-webpurple tablet:text-[11px] phoneL:text-[10px] phoneL:tracking-[2px] phoneP:text-[10px] phoneP:tracking-[1px]"
@@ -52,14 +52,14 @@ function Ftco() {
           </h3>
           <h1
             data-aos="fade-up"
-            className="font-bold uppercase tracking-[3px] text-[34px] leading-[48px] laptop:text-[30px] laptop:leading-[40px] laptop:tracking-[2px] tablet:text-[25px] tablet:leading-[35px] phoneL:text-[25px] phoneL:leading-[30px] phoneL:tracking-[1px] phoneP:text-[20px] phoneP:leading-[25px] phoneP:tracking-[1px]"
+            className="font-bold uppercase tracking-[3px] text-[30px] leading-[40px] laptop:text-[30px] laptop:leading-[30px] laptop:tracking-[2px] tablet:text-[25px] tablet:leading-[35px] phoneL:text-[25px] phoneL:leading-[30px] phoneL:tracking-[1px] phoneP:text-[20px] phoneP:leading-[25px] phoneP:tracking-[1px]"
           >
             Highest
             <br /> Creative Standards
           </h1>
           <p
             data-aos="fade-up"
-            className="text-[16px] w-[70%] font-normal leading-[25px] text-[#999999] laptop:text-[14px] laptop:leading-[20px] laptop:w-[90%] tablet:text-[13px]  phoneL:text-[12px] phoneL:leading-[18px] phoneL:w-[100%] phoneP:text-[10px] phoneP:leading-[16px] phoneP:w-[100%]"
+            className="text-[13px] w-[70%] font-normal leading-[20px] text-[#999999] laptop:text-[14px] laptop:leading-[25px] desktop:w-[100%] tablet:text-[13px] phoneL:text-[12px] phoneL:leading-[18px] phoneL:w-[100%] phoneP:text-[10px] phoneP:leading-[16px] phoneP:w-[100%]"
           >
             To revolutionize project management and operational efficiency for
             SMEs by delivering AI-powered and data-driven tools, while
@@ -68,11 +68,11 @@ function Ftco() {
             resources, fostering sustainable growth and impactful careers.
           </p>
 
-          <div className="absolute bg-webpurple bottom-[1rem] right-[48%] translate-x-[50%] w-[24%] p-3 flex gap-6 laptop:w-[27%] laptop:p-2 tablet:w-[35%] phoneS:static phoneS:w-full phoneS:translate-x-0">
-            <div className="ftco_icon ">
-              <div className="bg-black rounded-full  p-4  phoneL:p-3 ">
+          <div className="absolute bg-webpurple bottom-[0.5rem] right-[48%] translate-x-[50%] w-[17%] p-3 flex gap-6 laptop:w-[18%] laptop:p-2 tablet:w-[25%] phoneS:static phoneS:w-full phoneS:translate-x-0">
+            <div className="ftco_icon">
+              <div className="bg-black rounded-full p-4 phoneL:p-3 ">
                 <img
-                  className="w-[45px] laptop:w-[40px] tablet:w-[35px] phoneL:w-[30px]"
+                  className="w-[35px] laptop:w-[35px] tablet:w-[30px] phoneL:w-[25px]"
                   src={lightBuld}
                   alt="lightbulb"
                 />

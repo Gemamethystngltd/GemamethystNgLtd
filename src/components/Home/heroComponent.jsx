@@ -28,10 +28,10 @@ const Hero = ({ img, mainText }) => {
 
             <Link to={"/portfolio"}>
               <div className="relative overflow-hidden group">
-                <button className="btn btn_view px-[12px] uppercase tracking-[1px] py-[14px] bg-white text-webpurple border-none cursor-pointer text-[13px] font-bold rounded-md  laptop:text-[11px] laptop:px-[11px] laptop:py-[12px]  tablet:px-[10px] tablet:py-[11px]  phoneL:px-[10px] phoneL:py-[10px] phoneL:text-[9px] phoneP:text-[8px] phoneP:px-[8px] phoneP:py-[8px]">
+                <button className="btn btn_view px-[12px] uppercase tracking-[1px] py-[14px] bg-white text-webpurple border-none cursor-pointer text-[13px] font-bold rounded-md  laptop:text-[9px] laptop:px-[9px] laptop:py-[9px]  tablet:px-[10px] tablet:py-[11px]  phoneL:px-[10px] phoneL:py-[10px] phoneL:text-[9px] phoneP:text-[8px] phoneP:px-[8px] phoneP:py-[8px]">
                   View Portfolio
                 </button>
-                <button className="btn btn_view absolute inset-0 px-[12px] uppercase tracking-[1px] py-[14px] bg-black text-white flex -translate-x-full group-hover:translate-x-0 transition-transform duration-300 border-none cursor-pointer text-[13px] font-bold rounded-md  laptop:text-[11px] laptop:px-[11px] laptop:py-[12px]  tablet:px-[10px] tablet:py-[11px]  phoneL:px-[10px] phoneL:py-[10px] phoneL:text-[9px] phoneP:text-[8px] phoneP:px-[8px] phoneP:py-[8px]">
+                <button className="btn btn_view absolute inset-0 px-[12px] uppercase tracking-[1px] py-[14px] bg-black text-white flex -translate-x-full group-hover:translate-x-0 transition-transform duration-300 border-none cursor-pointer text-[13px] font-bold rounded-md  laptop:text-[9px] laptop:px-[9px] laptop:py-[9px]  tablet:px-[10px] tablet:py-[11px]  phoneL:px-[10px] phoneL:py-[10px] phoneL:text-[9px] phoneP:text-[8px] phoneP:px-[8px] phoneP:py-[8px]">
                   View Portfolio
                 </button>
               </div>

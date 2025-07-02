@@ -634,13 +634,13 @@ export const blogspostlong = [
 
 export const porfoliolong = [
   {
-    title: "Design fundamentals",
-    description: "Last year March.",
+    title: "Faceless",
+    description: "Last year September",
     bgImage: bg1,
   },
   {
-    title: "Faceless",
-    description: "Last year September",
+    title: "Design fundamentals",
+    description: "Last year March.",
     bgImage: bg2,
   },
 ];

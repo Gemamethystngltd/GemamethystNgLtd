@@ -52,6 +52,7 @@ const SolutionBox = ({ text, icon }) => {
             phoneL:text-[13px] phoneL:leading-[16px]
             tablet:text-[14px] tablet:leading-[18px]
             laptop:text-[15px] laptop:leading-[20px]
+            desktop: -mt-4
             wide:text-[16px] wide:leading-[22px]
             w-[80%]
           "

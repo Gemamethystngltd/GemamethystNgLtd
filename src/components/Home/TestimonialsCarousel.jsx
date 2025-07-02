@@ -58,7 +58,7 @@ function TestimonialsCarousel() {
           <div key={index} className="rounded-lg flex p-2">
            <div className="flex flex-col rounded-lg w-full max-w-[550px] phoneP:h-[30vh] phoneL:h-[35vh] phoneS:h-[35vh] tablet:h-[35vh] laptop:h-[35vh] desktop:h-[50vh] wide:h-[50vh] justify-between px-4 py-6 bg-white shadow-lg">
               <div className="quote_section">
-                <p className="text-gray-700 text-base block mt-8 text-wrap laptop:leading-4 laptop:text-[.7rem] laptop:mt-4 tablet:text-[.65rem] phoneP:text-[.5rem] phoneP:leading-3 ">
+                <p className="text-gray-700 text-md block mt-8 text-wrap laptop:leading-4 laptop:text-[.5rem] laptop:mt-4 tablet:text-[.55rem] phoneP:text-[.5rem] phoneP:leading-3 ">
                   {testimonial.quote}
                 </p>
               </div>
@@ -79,7 +79,7 @@ function TestimonialsCarousel() {
                       <i className="fa-solid fa-star text-webpurple text-[12px] leading-[12px] laptop:text-[10px] laptop:leading-[10px] phoneP:text-[7px]"></i>
                       <i className="fa-solid fa-star text-webpurple text-[12px] leading-[12px] laptop:text-[10px] laptop:leading-[10px] phoneP:text-[7px]"></i>
                     </div>
-                    <h3 className="leading-[32px] text-[18px] font-semibold laptop:text-[15px] laptop:leading-[18px] phoneL:text-[14px] phoneL:leading-[24px] phoneP:text-[10px] phoneP:leading-[10px]">
+                    <h3 className="leading-[28px] text-[14px] font-semibold laptop:text-[13px] laptop:leading-[14px] phoneL:text-[14px] phoneL:leading-[24px] phoneP:text-[10px] phoneP:leading-[10px]">
                       {testimonial.name}
                     </h3>
                   </div>

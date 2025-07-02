@@ -10,14 +10,14 @@ const Header = ({ text, title, btnText, textColor, linkto }) => {
           {text}
         </h3>
         <h1
-          className={`font-bold leading-[48px] uppercase text-[34px] tracking-[3px] laptop:tracking-[2px] ${textColor} laptop:leading-[38px] laptop:text-[28px] phoneL:text-[18px] phoneL:leading-[30px] phoneL:tracking-[1px] phoneP:text-[14px] phoneP:leading-[20px]`}
+          className={`font-bold leading-[40px] uppercase text-[28px] tracking-[3px] laptop:tracking-[2px] ${textColor} laptop:leading-[30px] laptop:text-[24px] phoneL:text-[18px] phoneL:leading-[30px] phoneL:tracking-[1px] phoneP:text-[14px] phoneP:leading-[20px]`}
         >
           {title}
         </h1>
       </div>
       <div className="team_btn">
         <Link to="/teammembers">
-          <button className=" border-2  border-webpurple p-2 text-webpurple text-[12px] leading-[22px] font-bold uppercase laptop:text-[10px] laptop:p-1 phoneL:text-[8px] ">
+          <button className=" border-2  border-webpurple p-2 text-webpurple text-[10px] leading-[18px] font-bold uppercase laptop:text-[8px] laptop:p-1 phoneL:text-[8px] ">
             {btnText}
           </button>
         </Link>

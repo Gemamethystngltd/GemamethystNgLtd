@@ -12,7 +12,7 @@ const Testimonails = () => {
             Testimonial
           </h3>
           <h1
-            className={`font-bold leading-[48px] uppercase text-[34px] tracking-[3px] laptop:tracking-[2px]  laptop:leading-[38px] laptop:text-[28px] phoneP:text-[18px] phoneP:leading-[25px] phoneP:tracking-[1px]`}
+            className={`font-bold leading-[40px] uppercase text-[30px] tracking-[3px] laptop:tracking-[2px]  laptop:leading-[30px] laptop:text-[24px] phoneP:text-[18px] phoneP:leading-[25px] phoneP:tracking-[1px]`}
           >
             People Say <br></br> About Our Works
           </h1>

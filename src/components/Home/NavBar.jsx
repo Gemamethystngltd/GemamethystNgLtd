@@ -51,10 +51,10 @@ function NavBar() {
 
   return (
     <>
-      <nav className="flex justify-around flex-wrap absolute w-full items-center bg-white/20 backdrop-blur-[1px] top-10 py-4 px-[2rem] laptop:px-[1rem] laptop:justify-between phoneL:py-3 phoneP:py-2 z-20">
+      <nav className="flex justify-around flex-wrap absolute w-full items-center bg-white/20 backdrop-blur-[1px] top-7 py-4 px-[2rem] laptop:px-[1rem] laptop:justify-between phoneL:py-3 phoneP:py-2 z-20">
         <div className="logo_container">
           <Link to="/">
-            <h1 className="text-[24px] leading-[28px] text-white font-bold phoneL:text-[22px] phoneP:text-[17px]">
+            <h1 className="text-[20px] leading-[24px] text-white font-bold phoneL:text-[20px] phoneP:text-[15px]">
               <span className="text-webpurple">Gem</span>amethystng
             </h1>
           </Link>

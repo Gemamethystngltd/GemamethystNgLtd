@@ -27,10 +27,10 @@ function Faq() {
             data-aos="fade-up"
             className="faq_header flex flex-col gap-8 laptop:gap-4 tablet:gap-2"
           >
-            <h2 className="font-semibold leading-[23px] text-[13px] text-webpurple uppercase laptop:text-[11px] laptop:leading-[21px] laptop:tracking-[2px] phoneL:text-[10px] phoneL:tracking-[1px] phoneP:text-[10px] phoneP:tracking-[1px]">
+            <h2 className="font-semibold leading-[20px] text-[13px] text-webpurple uppercase laptop:text-[11px] laptop:leading-[21px] laptop:tracking-[2px] phoneL:text-[10px] phoneL:tracking-[1px] phoneP:text-[10px] phoneP:tracking-[1px]">
               Frequently Asked Questions
             </h2>
-            <h1 className="text-[34px] leading-[48px] font-bold text-black uppercase tracking-[3px] laptop:text-[30px] laptop:leading-[40px] laptop:tracking-[2px] tablet:text-[20px] tablet:leading-[30px] phoneL:text-[18px] phoneL:leading-[25px] phoneP:text-[16px] phoneP:leading-[20px]">
+            <h1 className="text-[27px] leading-[40px] font-bold text-black uppercase tracking-[3px] laptop:text-[30px] laptop:leading-[35px] laptop:tracking-[2px] tablet:text-[15px] tablet:leading-[25px] phoneL:text-[18px] phoneL:leading-[25px] phoneP:text-[16px] phoneP:leading-[20px]">
               Frequently <br /> Asked Questions?
             </h1>
           </header>
@@ -46,7 +46,7 @@ function Faq() {
                 >
                   <div className="flex justify-between items-center overflow-hidden">
                     <span
-                      className={`faq-question text-[18px] leading-[27px] font-normal laptop:text-[16px] laptop:leading-[20px] tablet:text-[12px] tablet:leading-[12px] ${
+                      className={`faq-question text-[14px] leading-[20px] font-normal laptop:text-[16px] laptop:leading-[20px] tablet:text-[12px] tablet:leading-[12px] ${
                         activeIndex === index ? "text-white" : "text-black"
                       } uppercase`}
                     >
@@ -120,7 +120,7 @@ function Faq() {
           <div className="faq_img_text flex flex-col gap-16 laptop:gap-10 phoneL:gap-6">
             <h1
               data-aos="fade-up"
-              className="text-[32px] leading-[48px] font-bold text-black uppercase tracking-[1px] laptop:text-[28px] laptop:leading-[38px] laptop:tracking-[2px] tablet:text-[20px] tablet:leading-[30px] phoneL:text-[18px] phoneL:leading-[25px] phoneP:text-[16px] phoneP:leading-[20px]"
+              className="text-[27px] leading-[40px] font-bold text-black uppercase tracking-[1px] laptop:text-[25px] laptop:leading-[30px] laptop:tracking-[2px] tablet:text-[20px] tablet:leading-[25px] phoneL:text-[18px] phoneL:leading-[25px] phoneP:text-[16px] phoneP:leading-[20px]"
             >
               We Are Very <br />
               Experienced Professionals
@@ -140,10 +140,10 @@ function Faq() {
                   className="faq_progress_bar_container flex flex-col gap-2 w-full"
                 >
                   <div className="faq_progress_bar_header flex justify-between">
-                    <h2 className="font-bold uppercase text-[14px] leading-[21px] phoneL:text-[12px]">
+                    <h2 className="font-bold uppercase text-[11px] leading-[15px] phoneL:text-[12px]">
                       {label}
                     </h2>
-                    <h2 className="text-[16px] pr-[5%] font-bold leading-[19px] text-webpurple phoneL:text-[14px]">
+                    <h2 className="text-[12px] pr-[5%] font-bold leading-[15px] text-webpurple phoneL:text-[14px]">
                       {value}%
                     </h2>
                   </div>
