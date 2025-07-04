@@ -65,12 +65,12 @@ function NavBar() {
           {navData.map((data, index) => (
             <li
               key={index}
-              className="links text-[15px] leading-[27px] font-medium laptop:text-[14px] tablet:text-[12px]"
+              className="links text-[13px] leading-[27px] font-medium laptop:text-[13px] tablet:text-[12px]"
             >
               <NavLink to={data.linkto}>{data.name}</NavLink>
             </li>
           ))}
-          <button className="btn btn_shop cursor-pointer transition-all hover:scale-110 duration-300 ease-in-out px-4 rounded-[.4rem] bg-webpurple tracking-[1px] font-medium text-[15px] uppercase text-white py-2 laptop:text-[13px] tablet:text-[11px]">
+          <button className="btn btn_shop cursor-pointer transition-all hover:scale-110 duration-300 ease-in-out px-4 rounded-[.4rem] bg-webpurple tracking-[1px] font-medium text-[13px] uppercase text-white py-2 laptop:text-[13px] tablet:text-[11px]">
             GEMACADEMY
           </button>
         </ul>

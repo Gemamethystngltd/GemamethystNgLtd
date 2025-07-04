@@ -14,7 +14,7 @@ const Hero = ({ img, mainText }) => {
             {mainText}
           </h1>
           <p className="text-lightwhite font-normal text-[16px] laptop:text-[13px] tablet:text-[12px] phoneL:text-[11px] phoneP:text-[10px] ">
-            We listen , we act because we belive you are worth it{" "}
+            We listen , we act because we believe you are worth it{" "}
           </p>
 
           <div className="btn_container gap-4 flex items-center mt-2 p-2 tablet:gap-2 tablet:p-1 tablet:mt-3 phoneL:mt-2">

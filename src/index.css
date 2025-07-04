@@ -33,12 +33,18 @@
   background-size: cover;
   height: 100vh;
 }
-/* subhero section compontt in the about and other pages  */
+/* subhero section component in the about and other pages  */
 .sub_hero_section {
   background: url("./assets/images/xbg_4.jpg.pagespeed.ic.jsNSabbn7j.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+}
+
+@media screen and (max-width: 768px) {
+  .sub_hero_section {
+    background-attachment: scroll;
+  }
 }
 /* solutions_sections conponents styling */
 .solutions_sections {

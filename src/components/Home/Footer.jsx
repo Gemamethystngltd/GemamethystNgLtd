@@ -44,7 +44,7 @@ function Footer() {
                   key={index}
                   data-aos="fade-up"
                   data-aos-delay={index * 100}
-                  className={`fa-brands ${item} text-white bg-webpurple p-3 rounded-full text-[11px] tablet:p-[.3rem] phoneL:text-[8px] phoneS:text-[text-12px] tablet:text-[8px] desktop:text-[5px] phoneP:p-[.5rem] phoneP:text-[9px]`}
+                  className={`fa-brands ${item} text-white bg-webpurple p-3 rounded-full text-[11px] tablet:p-[.3rem] phoneL:text-[8px] phoneS:text-[text-12px] tablet:text-[10px] desktop:text-[9px] phoneS:p-[.3rem] phoneL:p-[.5rem] phoneP:p-[.3rem] phoneP:text-[9px]`}
                 ></i>
               ))}
             </div>

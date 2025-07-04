@@ -6,7 +6,7 @@ function PricingServices() {
         <header>
           <h1
             data-aos="fade-up"
-            className="font-bold text-5xl wide:text-5xl tablet:text-3xl phoneL:text-2xl phoneP:text-xl leading-tight"
+            className="font-bold text-4xl wide:text-5xl tablet:text-3xl phoneL:text-2xl phoneP:text-xl leading-tight"
           >
             <span className="text-webpurple">Our </span>
             <span className="text-black">Services</span>
@@ -22,7 +22,7 @@ function PricingServices() {
     phoneL:grid-cols-1 
     tablet:grid-cols-2 
     wide:grid-cols-4
-    desktop:grid-cols-3 
+    desktop:grid-cols-4 
     gap-4 
     text-md phoneL:text-base 
     text-gray-700 
