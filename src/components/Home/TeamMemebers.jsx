@@ -21,6 +21,9 @@ import teamMember9 from "../../assets/images/ibrahim.png";
 import teamMember10 from "../../assets/images/samuel.png";
 import teamMember11 from "../../assets/images/faith.png";
 import teamMember12 from "../../assets/images/jamiu.png";
+import teamMember13 from "../../assets/images/emmanuel.png";
+import teamMember14 from "../../assets/images/Oluwadara.png";
+
 
 
 function TeamMemebers() {
@@ -199,6 +202,36 @@ function TeamMemebers() {
       image: teamMember12,
       name: "Jamiu Nasirullahi Ayobami",
       role: "Data Analyst Intern, GemamethystNgLtd",
+      socialMedia: [
+        {
+          icon: "fa-linkedin-in",
+          url: "#",
+        },
+        { icon: "fa-google", url: "#" },
+        { icon: "fa-facebook-f", url: "#" },
+        { icon: "fa-x-twitter", url: "#" },
+        { icon: "fa-instagram", url: "#" },
+      ],
+    },
+    {
+      image: teamMember13,
+      name: "Emmanuel Ayobami",
+      role: "UI/UX Designer, GemamethystNgLtd",
+      socialMedia: [
+        {
+          icon: "fa-linkedin-in",
+          url: "#",
+        },
+        { icon: "fa-google", url: "#" },
+        { icon: "fa-facebook-f", url: "#" },
+        { icon: "fa-x-twitter", url: "#" },
+        { icon: "fa-instagram", url: "#" },
+      ],
+    },
+    {
+      image: teamMember14,
+      name: "Ayansiji Emmanuel Oluwadara",
+      role: "Graphic Design Intern, GemamethystNgLtd",
       socialMedia: [
         {
           icon: "fa-linkedin-in",
