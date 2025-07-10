@@ -1,8 +1,10 @@
 import { FaChevronRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const SolutionBox = ({ text, icon }) => {
   return (
-    <div
+     <Link to="/pricing"> 
+     <div
       data-aos="fade-up-right"
       className="
         group relative
@@ -75,6 +77,7 @@ const SolutionBox = ({ text, icon }) => {
         <FaChevronRight className="text-webpurple text-xl" />
       </div>
     </div>
+     </Link>
   );
 };
 
