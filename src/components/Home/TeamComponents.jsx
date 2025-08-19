@@ -11,7 +11,6 @@ function TeamComponents() {
           </>
         }
         btnText={"view all members"}
-        linkto={"/portfolio"}
       />
 
       <TeamMemebers />

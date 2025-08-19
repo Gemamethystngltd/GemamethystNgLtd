@@ -3,11 +3,27 @@ import stats from "../assets/icons/bar-chart.png";
 import horn from "../assets/icons/bullhorn.png";
 import vector from "../assets/icons/vector.png";
 import ux from "../assets/icons/web-design.png";
-import branding from "../assets/icons/branding.png";
+import branding from "../assets/icons/branding.png"
 import web from "../assets/icons/web-programming.png";
 import cer from "../assets/icons/certificate.png";
 import data from "../assets/icons/Data-Analysis.png";
 import Engineer from "../assets/icons/Engineer.png";
+
+//Combined Team data
+import teamMember1 from "../assets/images/team1.png";
+import teamMember2 from "../assets/images/Co-founder.jpg";
+import teamMember3 from "../assets/images/secretary.png";
+import teamMember4 from "../assets/images/Tosin.png";
+import teamMember5 from "../assets/images/adeola.jpg";
+import teamMember6 from "../assets/images/prisilla.png";
+import teamMember7 from "../assets/images/ugo.png";
+import teamMember8 from "../assets/images/jessica.png";
+import teamMember9 from "../assets/images/ibrahim.png";
+import teamMember10 from "../assets/images/samuel.png";
+import teamMember11 from "../assets/images/faith.png";
+import teamMember12 from "../assets/images/jamiu.png";
+import teamMember13 from "../assets/images/emmanuel.png";
+import teamMember14 from "../assets/images/Oluwadara.png";
 
 // pdf importsd
 import pdf1 from "../assets/pdf/PRINCIPLES OF DISEASE CONTROL AND USES OF EPIDEMIOLOGY.pdf";
@@ -668,3 +684,217 @@ export const contacData = [
     description: "Gemamethystng",
   },
 ];
+
+//Team data
+export const teamData = [
+    {
+      image: teamMember1,
+      name: "Hephzibah Reginald Otuene",
+      role: "CEO, GemamethystNgLtd",
+      socialMedia: [
+        {
+          icon: "fa-linkedin-in",
+          url: "https://linkedin.com/in/hephzibah-otuene",
+        },
+        { icon: "fa-google", url: "#" },
+        { icon: "fa-facebook-f", url: "https://facebook.com/Itz_hebzlove" },
+        { icon: "fa-x-twitter", url: "https://twitter.com/Itz_hebzlove" },
+        { icon: "fa-instagram", url: "https://instagram.com/Itz_hebzlove" },
+      ],
+    },
+    {
+      image: teamMember2,
+      name: "Theophilus Adegoke Olaniran",
+      role: "Co-Founder, GemAcademy",
+      socialMedia: [
+        {
+          icon: "fa-linkedin-in",
+          url: "https://www.linkedin.com/in/theophilus-olaniran-gmnse-8007211ab/",
+        },
+        { icon: "fa-google", url: "#" },
+        { icon: "fa-facebook-f", url: "#" },
+        { icon: "fa-x-twitter", url: "#" },
+        { icon: "fa-instagram", url: "https://instagram.com/Itistheoo" },
+      ],
+    },
+    {
+      image: teamMember3,
+      name: "Daniel Omotola",
+      role: "Secretary, GemamethystNgLtd",
+      socialMedia: [
+        {
+          icon: "fa-linkedin-in",
+          url: "#",
+        },
+        { icon: "fa-google", url: "#" },
+        { icon: "fa-facebook-f", url: "#" },
+        { icon: "fa-x-twitter", url: "#" },
+        { icon: "fa-instagram", url: "https://instagram.com/auserwithnohandle" },
+      ],
+    },
+    {
+      image: teamMember4,
+      name: "Olamide Ishola Oluwatosin",
+      role: "UI/UX Intern, GemamethystNgLtd",
+      socialMedia: [
+        {
+          icon: "fa-linkedin-in",
+          url: "#",
+        },
+        { icon: "fa-google", url: "#" },
+        { icon: "fa-facebook-f", url: "#" },
+        { icon: "fa-x-twitter", url: "#" },
+        { icon: "fa-instagram", url: "#" },
+      ],
+    },
+    {
+      image: teamMember5,
+      name: "Oladeinde Adeola Williams",
+      role: "Fullstack Developer Intern, GemamethystNgLtd",
+      socialMedia: [
+        {
+          icon: "fa-linkedin-in",
+          url: "www.linkedin.com/in/oladeinde-adeola",
+        },
+        { icon: "fa-google", url: "mailto:Adeolaoladeinde6@gmail.com" },
+        { icon: "fa-facebook-f", url: "#" },
+        { icon: "fa-x-twitter", url: "#" },
+        { icon: "fa-instagram", url: "#" },
+      ],
+    },
+    {
+      image: teamMember6,
+      name: "Priscilla Ikeri Oluchukwu",
+      role: "Front-end Developer Intern, GemamethystNgLtd",
+      socialMedia: [
+        {
+          icon: "fa-linkedin-in",
+          url: "#",
+        },
+        { icon: "fa-google", url: "#" },
+        { icon: "fa-facebook-f", url: "#" },
+        { icon: "fa-x-twitter", url: "#" },
+        { icon: "fa-instagram", url: "#" },
+      ],
+    },
+    {
+      image: teamMember7,
+      name: "Ugochukwu Nebolisa Benedict",
+      role: "Front-end Developer Intern, GemamethystNgLtd",
+      socialMedia: [
+        {
+          icon: "fa-linkedin-in",
+          url: "#",
+        },
+        { icon: "fa-google", url: "#" },
+        { icon: "fa-facebook-f", url: "#" },
+        { icon: "fa-x-twitter", url: "#" },
+        { icon: "fa-instagram", url: "#" },
+      ],
+    },
+    {
+      image: teamMember8,
+      name: "Unagha Jessica Ugochi",
+      role: "Cybersecurity Intern, GemamethystNgLtd",
+      socialMedia: [
+        {
+          icon: "fa-linkedin-in",
+          url: "#",
+        },
+        { icon: "fa-google", url: "#" },
+        { icon: "fa-facebook-f", url: "#" },
+        { icon: "fa-x-twitter", url: "#" },
+        { icon: "fa-instagram", url: "#" },
+      ],
+    },
+    {
+      image: teamMember9,
+      name: "Ibrahim Mahadi Imam",
+      role: "Back-end Developer Intern,GemamethystNgLtd",
+      socialMedia: [
+        {
+          icon: "fa-linkedin-in",
+          url: "#",
+        },
+        { icon: "fa-google", url: "#" },
+        { icon: "fa-facebook-f", url: "#" },
+        { icon: "fa-x-twitter", url: "#" },
+        { icon: "fa-instagram", url: "#" },
+      ],
+    },
+    {
+      image: teamMember10,
+      name: "Samuel Ezealor Nzube",
+      role: "Back-end Developer Intern, GemamethystNgLtd",
+      socialMedia: [
+        {
+          icon: "fa-linkedin-in",
+          url: "#",
+        },
+        { icon: "fa-google", url: "#" },
+        { icon: "fa-facebook-f", url: "#" },
+        { icon: "fa-x-twitter", url: "#" },
+        { icon: "fa-instagram", url: "#" },
+      ],
+    },
+    {
+      image: teamMember11,
+      name: "Oluwaseyi Lajorin Faith",
+      role: "Data Analyst Intern, GemamethystNgLtd",
+      socialMedia: [
+        {
+          icon: "fa-linkedin-in",
+          url: "#",
+        },
+        { icon: "fa-google", url: "#" },
+        { icon: "fa-facebook-f", url: "#" },
+        { icon: "fa-x-twitter", url: "#" },
+        { icon: "fa-instagram", url: "#" },
+      ],
+    },
+    {
+      image: teamMember12,
+      name: "Jamiu Nasirullahi Ayobami",
+      role: "Data Analyst Intern, GemamethystNgLtd",
+      socialMedia: [
+        {
+          icon: "fa-linkedin-in",
+          url: "#",
+        },
+        { icon: "fa-google", url: "#" },
+        { icon: "fa-facebook-f", url: "#" },
+        { icon: "fa-x-twitter", url: "#" },
+        { icon: "fa-instagram", url: "#" },
+      ],
+    },
+    {
+      image: teamMember13,
+      name: "Emmanuel Ayobami",
+      role: "UI/UX Designer, GemamethystNgLtd",
+      socialMedia: [
+        {
+          icon: "fa-linkedin-in",
+          url: "#",
+        },
+        { icon: "fa-google", url: "#" },
+        { icon: "fa-facebook-f", url: "#" },
+        { icon: "fa-x-twitter", url: "#" },
+        { icon: "fa-instagram", url: "#" },
+      ],
+    },
+    {
+      image: teamMember14,
+      name: "Ayansiji Emmanuel Oluwadara",
+      role: "Graphic Design Intern, GemamethystNgLtd",
+      socialMedia: [
+        {
+          icon: "fa-linkedin-in",
+          url: "#",
+        },
+        { icon: "fa-google", url: "#" },
+        { icon: "fa-facebook-f", url: "#" },
+        { icon: "fa-x-twitter", url: "#" },
+        { icon: "fa-instagram", url: "#" },
+      ],
+    },
+  ];
